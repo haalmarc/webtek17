@@ -46,6 +46,15 @@ figcaption {
   text-align: center;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 10px;
+}
+
 hr {
   width: 60%;
 }
@@ -66,7 +75,31 @@ footer {
   font-size: 20px;
 }
 
+.tabellNavn {
+  width: 15%;
+}
+
+.tabellDesc {
+  width: 55%;
+}
+
+.tabellResp {
+ width: 10%;
+}
+
+.tabellDead {
+ width: 10%;
+}
+
+.mockup {
+  width: 50%;
+  border: 1px solid;
+}
+
 #hovedoverskrift {
   font-style: italic;
 }
 
+#orgkart {
+  width: 60%;
+}
