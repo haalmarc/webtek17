@@ -1,7 +1,56 @@
-/* Globals */ 
+/* GLOBALS */ 
 
 * {
   box-sizing: border-box;
 }
 
-/* Header */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+/* HEADER */
+
+header container {
+  width: 100%;
+  background-color: #985452;
+  color: white;
+  border-bottom: 3px solid white;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a, #engelsk {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 5px 20px;
+  padding: 10px;
+}
+
+header container #engelsk {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+header ul li a:hover, #engelsk:hover {
+  background-color: white;
+  color: #985452;
+  transition: 0.4s;
+}
