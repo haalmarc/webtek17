@@ -1,0 +1,35 @@
+body {
+  color: white;
+  background-color: #995453;
+  font-family: Georgia,Times,serif;
+  margin:0;
+}
+h3 {
+  margin-top:0;
+}
+footer {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer img {
+  width: 3%;
+}
+#forsidebilde {
+  width: 100%;
+}
+#hovedtekst {
+  font-size: 30px;
+  margin: 0;
+}
+#undertekst {
+  font-size: 18px;
+  margin-left: 15%;
+  margin-top:0;
+}
+.bildetekst {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
