@@ -8,50 +8,52 @@
 </head>
 <body>
     <div class="container">
-        <fieldset>
-            <legend><h1>
-                Påmelding
-            </h1></legend>
-            <p>
-                <label for="fnavn" class="inputlinje">Fornavn: </label>
-                <input type="text" name="fornavn" id="fnavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <label for="enavn" class="inputlinje">Etternavn: </label>
-                <input type="text" name="etternavn" id="enavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <label for="epost" class="inputlinje">E-post: </label>
-                <input type="email" name="email" id="epost" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <label for="klasse" class="inputlinje">Klasse/kategori: </label>
-                <select name="klasse" required>
-                    <option value="???">Vet ikke hva som skal være her</option>
-                </select><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <label for="tlf" class="inputlinje">Mobil: </label>
-                <input type="tel" name="mobil" id="tlf" required>
-            </p>
-            <p>
-                <label for="hvordan" class="inputlinje">Hvordan hørte du om oss? </label>
-                <input type="text" name="hvordan" id="hvordan" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <input type="checkbox" name="medlemskapTLH" id="medlemskap" required>
-                <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd" aria-label="påkrevd">*</abbr><br>
-                Medlemskap er inkludert i kursavgiften.
-            </p>
-            <p>
-                <input type="checkbox" name="aksept" id="aksept" required>
-                <label for="aksept">Jeg aksepterer Deltager AS' <a href="#">vilkår og betingelser</a> og <a href="#">personvernerklæringen</a></label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-            </p>
-            <p>
-                <button type="submit">Bekreft</button>
-            </p>
+        <form>
+            <fieldset>
+                <legend><h1>
+                    Påmelding
+                </h1></legend>
+                <p>
+                    <label for="fnavn" class="inputlinje">Fornavn: </label>
+                    <input type="text" name="fornavn" id="fnavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <label for="enavn" class="inputlinje">Etternavn: </label>
+                    <input type="text" name="etternavn" id="enavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <label for="epost" class="inputlinje">E-post: </label>
+                    <input type="email" name="email" id="epost" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <label for="klasse" class="inputlinje">Klasse/kategori: </label>
+                    <select name="klasse" required>
+                        <option value="???">Vet ikke hva som skal være her</option>
+                    </select><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <label for="tlf" class="inputlinje">Mobil: </label>
+                    <input type="tel" name="mobil" id="tlf" required>
+                </p>
+                <p>
+                    <label for="hvordan" class="inputlinje">Hvordan hørte du om oss? </label>
+                    <input type="text" name="hvordan" id="hvordan" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <input type="checkbox" name="medlemskapTLH" id="medlemskap" required>
+                    <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd" aria-label="påkrevd">*</abbr><br>
+                    Medlemskap er inkludert i kursavgiften.
+                </p>
+                <p>
+                    <input type="checkbox" name="aksept" id="aksept" required>
+                    <label for="aksept">Jeg aksepterer Deltager AS' <a href="#">vilkår og betingelser</a> og <a href="#">personvernerklæringen</a></label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                </p>
+                <p>
+                    <button type="submit">Bekreft</button>
+                </p>
 
-        </fieldset>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
