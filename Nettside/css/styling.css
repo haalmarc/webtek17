@@ -13,7 +13,7 @@ body {
 
 /* HEADER */
 
-header container {
+header .container {
   width: 100%;
   background-color: #985452;
   color: white;
@@ -48,9 +48,15 @@ header container #engelsk {
   background-color: inherit;
   cursor: pointer;
 }
-
+/*
 header ul li a:hover, #engelsk:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
+}
+*/
+
+header ul li a:hover, #engelsk:hover {
+  border-bottom: 3px solid grey;
+  transition: 0.2s;
 }
