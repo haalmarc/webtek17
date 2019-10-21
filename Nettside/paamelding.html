@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/paamelding.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Påmelding</title>
@@ -9,46 +9,48 @@
 <body>
     <div class="container">
         <form>
-            <fieldset>
-                <legend><h1>
+            <fieldset id="paamelding">
+                <legend>
                     Påmelding
-                </h1></legend>
-                <p>
+                </legend>
+                <p><!-- Fornavn -->
                     <label for="fnavn" class="inputlinje">Fornavn: </label>
-                    <input type="text" name="fornavn" id="fnavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    <input type="text" name="fornavn" id="fnavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr> <!-- Using abbr to make the page more accessible to screenreaders -->
                 </p>
-                <p>
+                <p> <!-- Etternavn -->
                     <label for="enavn" class="inputlinje">Etternavn: </label>
                     <input type="text" name="etternavn" id="enavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
                 </p>
-                <p>
+                <p> <!-- Epost -->
                     <label for="epost" class="inputlinje">E-post: </label>
                     <input type="email" name="email" id="epost" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
                 </p>
-                <p>
+                <p> <!-- Klasse -->
                     <label for="klasse" class="inputlinje">Klasse/kategori: </label>
                     <select name="klasse" required>
-                        <option value="???">Vet ikke hva som skal være her</option>
+                        <option value="" disabled selected>Velg</option>
+                        <option value="hoest">Kurs høsten 2019 (kr 950,00)</option>
+                        <option value="kunAvgivt">Kun medlemsavgift (kr 50,00)</option>
                     </select><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
                 </p>
-                <p>
+                <p> <!-- Tlf -->
                     <label for="tlf" class="inputlinje">Mobil: </label>
-                    <input type="tel" name="mobil" id="tlf" required>
+                    <input type="tel" name="mobil" id="tlf">
                 </p>
-                <p>
+                <p> <!-- Hvordan hørte du om oss? -->
                     <label for="hvordan" class="inputlinje">Hvordan hørte du om oss? </label>
                     <input type="text" name="hvordan" id="hvordan" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
                 </p>
-                <p>
+                <p> <!-- MedlemskapTLH -->
                     <input type="checkbox" name="medlemskapTLH" id="medlemskap" required>
-                    <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd" aria-label="påkrevd">*</abbr><br>
-                    Medlemskap er inkludert i kursavgiften.
+                    <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    <p>Medlemskap er inkludert i kursavgiften.</p>
                 </p>
-                <p>
+                <p> <!-- Aksept boks -->
                     <input type="checkbox" name="aksept" id="aksept" required>
                     <label for="aksept">Jeg aksepterer Deltager AS' <a href="#">vilkår og betingelser</a> og <a href="#">personvernerklæringen</a></label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
                 </p>
-                <p>
+                <p> <!-- Bekreft -->
                     <button type="submit">Bekreft</button>
                 </p>
 
