@@ -1,5 +1,9 @@
 /* Påmelding */
 
+body {
+    white-space: nowrap;
+}
+
 legend {
     margin: auto;
     font-size: x-large; /* Midlertidig font størrelse*/
@@ -44,17 +48,6 @@ abbr {
     text-decoration: none; /* Remove the dotted line from abbreviations */
 }
 
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-}
-
-select::-ms-expand {
-    display: none;
-  }
-
 .container { /* Samme som i courses */
     width: 80%;
     height: 60%;
@@ -68,8 +61,4 @@ select::-ms-expand {
 
 #aksept {
     margin-bottom: 25px;
-}
-
-#paakrevd {
-    margin: -15px;
 }
