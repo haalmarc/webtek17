@@ -18,7 +18,7 @@ fieldset {
     -webkit-box-sizing: border-box; /* Må brukes for å gjøre <select> til lik størrelse som <inpu> */
     -moz-box-sizing: border-box;
          box-sizing: border-box;
-    width: 95%;
+    width: 100%;
     border: 1px, solid, #cccccc;
     text-indent: 4px;
     padding: 10px;
@@ -44,6 +44,16 @@ abbr {
     text-decoration: none; /* Remove the dotted line from abbreviations */
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select::-ms-expand {
+    display: none;
+  }
 
 .container { /* Samme som i courses */
     width: 80%;
@@ -58,4 +68,8 @@ abbr {
 
 #aksept {
     margin-bottom: 25px;
+}
+
+#paakrevd {
+    margin: -15px;
 }

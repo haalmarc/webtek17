@@ -15,23 +15,23 @@
                 </legend>
                 <p><!-- Fornavn -->
                     <label for="fnavn" class="inputlinje">Fornavn: </label>
-                    <input type="text" name="fornavn" id="fnavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr> <!-- Using abbr to make the page more accessible to screenreaders -->
+                    <input type="text" name="fornavn" id="fnavn" required><span id="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span> <!-- Using abbr to make the page more accessible to screenreaders -->
                 </p>
                 <p> <!-- Etternavn -->
                     <label for="enavn" class="inputlinje">Etternavn: </label>
-                    <input type="text" name="etternavn" id="enavn" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    <input type="text" name="etternavn" id="enavn" required><span id="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
                 </p>
                 <p> <!-- Epost -->
                     <label for="epost" class="inputlinje">E-post: </label>
-                    <input type="email" name="email" id="epost" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    <input type="email" name="email" id="epost" required><span id="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
                 </p>
                 <p> <!-- Klasse -->
                     <label for="klasse" class="inputlinje">Klasse/kategori: </label>
                     <select name="klasse" required>
-                        <option value="" disabled selected>Velg</option>
+                        <option value="" id="velg" disabled selected>--Velg--</option>
                         <option value="hoest">Kurs høsten 2019 (kr 950,00)</option>
                         <option value="kunAvgivt">Kun medlemsavgift (kr 50,00)</option>
-                    </select><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    </select><span id="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
                 </p>
                 <p> <!-- Tlf -->
                     <label for="tlf" class="inputlinje">Mobil: </label>
@@ -39,7 +39,7 @@
                 </p>
                 <p> <!-- Hvordan hørte du om oss? -->
                     <label for="hvordan" class="inputlinje">Hvordan hørte du om oss? </label>
-                    <input type="text" name="hvordan" id="hvordan" required><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+                    <input type="text" name="hvordan" id="hvordan" required><span id="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
                 </p>
                 <p> <!-- MedlemskapTLH -->
                     <input type="checkbox" name="medlemskapTLH" id="medlemskap" required>
