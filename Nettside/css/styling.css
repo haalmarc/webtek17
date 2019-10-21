@@ -14,7 +14,8 @@ body {
 /* HEADER */
 
 header .container {
-  width: 100%;
+  height: 15vh;
+  width: 100vw;
   background-color: #985452;
   color: white;
   border-bottom: 3px solid white;
@@ -24,39 +25,34 @@ header .container {
   padding: 10px;
 }
 
-header ul {
-  margin: 0;
-  padding: 0;
+header nav {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
 }
 
-header ul li {
-  list-style-type: none;
-}
-
-header ul li a, #engelsk {
+header nav a, #engelsk {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 24px;
-  margin: 5px 20px;
+  font-size: 20px;
   padding: 10px;
 }
 
-header container #engelsk {
+header .container #engelsk {
   border: none;
-  background-color: inherit;
+  background-color: #985452;
   cursor: pointer;
 }
-/*
-header ul li a:hover, #engelsk:hover {
+
+header a:hover, header .container #engelsk:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
 }
-*/
 
-header ul li a:hover, #engelsk:hover {
-  border-bottom: 3px solid grey;
-  transition: 0.2s;
+header .container #logo {
+  width: auto;
+  height: 90%;
 }
