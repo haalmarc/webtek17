@@ -80,9 +80,13 @@ body {
         position: relative;
         text-align: center;
         color: white;
+  
+    }
+    .piccontainer img {
+        width: 100%;
     }
     
-    #centertext {
+    .piccontainer h1 {
         position: absolute;
         top: 50%;
         left: 50%;
