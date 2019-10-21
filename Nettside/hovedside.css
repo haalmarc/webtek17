@@ -19,6 +19,8 @@ footer img {
 }
 #forsidebilde {
   width: 100%;
+  animation-name: fadein;
+  animation-duration: 1s;
 }
 #hovedtekst {
   font-size: 30px;
@@ -34,4 +36,11 @@ footer img {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@keyframes fadein {
+  0% { opacity: .3 }
+  50% { opacity: .6 }
+  75% { opacity: .8 }
+  100% { opacity: 1 }
 }
