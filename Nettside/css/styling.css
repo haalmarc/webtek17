@@ -32,7 +32,7 @@ header nav {
   width: 40%;
 }
 
-header nav a, #engelsk {
+header nav .navElement, #engelsk {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -46,13 +46,16 @@ header .container #engelsk {
   cursor: pointer;
 }
 
-header a:hover, header .container #engelsk:hover {
+header .navElement:hover, header .container #engelsk:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
 }
 
-header .container #logo {
+header .container a #logo, header .container .home {
+  height: 100%;
+}
+
+header .container a #logo {
   width: auto;
-  height: 90%;
 }
