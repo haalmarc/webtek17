@@ -3,11 +3,11 @@ const header = document.querySelector('#main-header');
 
 // Container div
 const container = document.createElement('div')
-container.class = "container";
+container.classList.add("container");
 
 // Homepage link
 const homepage = document.createElement('a');
-homepage.class = "home";
+homepage.classList.add("home");
 homepage.href = "index.html";
 
 // Logo
@@ -25,7 +25,7 @@ const navbar = document.createElement('nav');
 
 // Courses link
 const courses = document.createElement('a');
-courses.class = "navElement";
+courses.classList.add("navElement");
 courses.href = "courses.html";
 courses.appendChild(document.createTextNode("Kurs"));
 
@@ -33,7 +33,7 @@ navbar.appendChild(courses); // Add courses to navigation bar
 
 // Events link
 const events = document.createElement('a');
-events.class = "navElement";
+events.classList.add("navElement");
 events.href = "events.html";
 events.appendChild(document.createTextNode("Eventer"));
 
@@ -41,7 +41,7 @@ navbar.appendChild(events); // Add events to navigation bar
 
 // About link
 const about = document.createElement('a');
-about.class = "navElement";
+about.classList.add("navElement");
 about.href = "about.html";
 about.appendChild(document.createTextNode("Om oss"));
 
