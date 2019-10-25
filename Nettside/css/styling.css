@@ -8,14 +8,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: lightgrey;
+  background-color: white;
 }
 
+/* ----------------- Skille ----------------- */
 /* HEADER */
 
-header .container {
+header .containerHeader {
   height: 15vh;
-  width: 100vw;
+  width: 100%;
   background-color: #985452;
   color: white;
   border-bottom: 3px solid white;
@@ -40,22 +41,88 @@ header nav .navElement, #engelsk {
   padding: 10px;
 }
 
-header .container #engelsk {
+header .containerHeader #engelsk {
   border: none;
   background-color: #985452;
   cursor: pointer;
 }
 
-header .navElement:hover, header .container #engelsk:hover {
+header .navElement:hover, header .containerHeader #engelsk:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
 }
 
-header .container a #logo, header .container .home {
+header .containerHeader a #logo, header .containerHeader #home {
   height: 100%;
 }
 
-header .container a #logo {
+header .containerHeader a #logo {
   width: auto;
+}
+
+/* ----------------- Skille ----------------- */
+/* Påmelding */
+
+legend {
+  margin: auto;
+  font-size: x-large; /* Midlertidig font størrelse*/
+}
+
+form {
+  width: 70%;
+  margin: auto;
+}
+
+abbr {
+  text-decoration: none; /* Remove the dotted line from abbreviations */
+}
+
+[type=text], [type=number], [type=email],[type=tel], select{
+  -webkit-box-sizing: border-box; /* Må brukes for å gjøre <select> til lik størrelse som <input> */
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 100%;
+  border: 1px, solid, #cccccc;
+  text-indent: 4px;
+  padding: 10px;
+}
+
+.skjemaBoks {
+  white-space: nowrap; /* Få asteriksen '*' til å være på linje med skjemaet */
+}
+
+.skjemaKnapp {            /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
+  background-color:#985452;
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+.skjemaKnapp:hover {
+  background-color: #b24e4b;
+}
+
+.container { /* Samme som i courses */
+  width: 80%;
+  height: 60%;
+  margin: 10%;
+  grid-column-gap: 20px;
+}
+
+.inputlinje {
+  display: block;
+}
+
+#aksept {
+  margin-bottom: 25px;
+}
+
+#paamelding {
+  border: none;
 }

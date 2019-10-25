@@ -14,7 +14,7 @@ form {
     margin: auto;
 }
 
-fieldset {
+#paamelding {
     border: none;
 }
 
@@ -28,7 +28,7 @@ fieldset {
     padding: 10px;
 }
 
-button {            /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
+.skjemaKnapp {            /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
     background-color:#985452;
     border: none;
     color: white;
@@ -40,7 +40,7 @@ button {            /* Samme som i courses. Tror dette vil se bedre ut enn en de
     display: block;
 }
 
-button:hover {
+.skjemaKnapp:hover {
     background-color: #b24e4b;
 }
 
