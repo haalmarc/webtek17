@@ -1,7 +1,7 @@
 /* Gjelder for footer, men også hovedside */
 body {
   color: white;
-  background-color: #995453;
+  background-color: white;
   font-family: Georgia,Times,serif;
   margin:0;
 }
@@ -17,11 +17,6 @@ footer {
 footer img {
   width: 3%;
 }
-#forsidebilde {
-  width: 100%;
-  animation-name: fadein;
-  animation-duration: 1s;
-}
 #hovedtekst {
   font-size: 30px;
   margin: 0;
@@ -31,16 +26,21 @@ footer img {
   margin-left: 15%;
   margin-top:0;
 }
+.forsidebilde {
+  width: 100%;
+  /*animation-name: fadeout;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;*/
+}
 .bildetekst {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-@keyframes fadein {
-  0% { opacity: .3 }
-  50% { opacity: .6 }
-  75% { opacity: .8 }
-  100% { opacity: 1 }
+@keyframes fadeout {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
 }

@@ -1,20 +1,26 @@
-var i = 0
-var forsidebilder = []
-var tid = 5000
+let index = 0
+let tid = 5000
 
-forsidebilder[0] = "img/forsidebilde1.jpg"
-forsidebilder[1] = "img/forsidebilde2.jpg"
-forsidebilder[2] = "img/forsidebilde3.jpg"
-forsidebilder[3] = "img/forsidebilde4.jpg"
-
+const forsidebilder = document.querySelectorAll(".forsidebilde")
+console.log(forsidebilder)
 function byttBilde(){
-  document.querySelector("#forsidebilde").src = forsidebilder[i]
 
-  if(i < forsidebilder.length -1){
-    i++
+  for (let i = 0; i < forsidebilder.length; i++) {
+    if(i === index){
+      forsidebilder[index].style.display = "block"
+    }
+    else {
+    forsidebilder[i].style.display = "none"
+    forsidebilder[i].style.opacity = 0
+    }
+    }
+  }
+
+  if(index < forsidebilder.length -1){
+    index++
   }
   else {
-    i = 0
+    index = 0
   }
 
   setTimeout("byttBilde()", tid)
