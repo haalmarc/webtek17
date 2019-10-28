@@ -14,7 +14,7 @@ body {
 /* ----------------- Skille ----------------- */
 /* HEADER */
 
-.containerHeader {
+header {
   height: 15vh;
   width: 100%;
   background-color: #985452;
@@ -40,23 +40,23 @@ nav .navElement, #engelsk {
   padding: 10px;
 }
 
-.containerHeader #engelsk {
+#engelsk {
   border: none;
   background-color: #985452;
   cursor: pointer;
 }
 
-.navElement:hover,   .containerHeader #engelsk:hover {
+.navElement:hover, #engelsk:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
 }
 
-.containerHeader a #logo, .containerHeader #home {
+#logo, #home {
   height: 100%;
 }
 
-.containerHeader a #logo {
+#logo {
   width: auto;
 }
 
@@ -66,27 +66,23 @@ nav .navElement, #engelsk {
 }
 
 @media only screen and (max-width: 600px) {
-  
-  .containerNav {
-    display: none; 
-  }
-
   .hamburgermenu {
     display: block;
     color: white;
     font-size: 3em;
   }
 
-  .containerNav {
+  nav {
+    display: none;
     background-color: #985452;
-    opacity: 0.9;
+    opacity: 0.8;
     position: absolute;
-    top: 15vh;
+    top: 15vh; /* Like høyt som header-høyden */
     left: 0;
     width: 100%;
   }
 
-  .containerNav a {
+  nav a {
     display: block;
     width: 100%;
     text-align: center;

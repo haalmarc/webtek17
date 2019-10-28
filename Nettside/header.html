@@ -10,11 +10,10 @@
 </head>
 <body>
   <header> <!-- Kun innhold i header bevares ved eksportering -->
-    <div class="containerHeader">
       <a id="home" href="./index.html">
         <img id="logo" src="./img/tlh_logo.png" alt="Trondheim Lindy Hop-logo">
       </a>
-      <nav class="containerNav">
+      <nav>
           <a class="navElement" href="./courses.html">Kurs</a>
           <a class="navElement" href="./courses.html">Eventer</a>
           <a class="navElement" href="./courses.html">Om oss</a>
@@ -24,12 +23,11 @@
         <i class="fa fa-bars"></i>
       </a>
       <button id="engelsk">English</button>
-    </div>
   </header>
   <script>
     <!-- Skjuler nav-elementer eller viser dem som blokker -->
     function toggleBlock() {
-      var nav = document.querySelector(".containerNav");
+      var nav = document.querySelector("nav");
       if (nav.style.display === "block") {
         nav.style.display = "none";
       } else {
