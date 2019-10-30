@@ -15,7 +15,7 @@ body {
 /* HEADER */
 
 header {
-  height: 15vh;
+  height: 100px;
   width: 100%;
   background-color: #985452;
   color: white;
@@ -78,7 +78,7 @@ nav .navElement {
     background-color: #985452;
     opacity: 0.8;
     position: absolute;
-    top: 15vh; /* Like høyt som header-høyden */
+    top: 100px; /* Like høyt som header-høyden */
     left: 0;
     width: 100%;
   }
