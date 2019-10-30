@@ -6,20 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Header</title>
   <link href="./css/styling.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- henter ut burger-ikon -->
 </head>
 <body>
   <header> <!-- Kun innhold i header bevares ved eksportering -->
-    <div class="containerHeader">
       <a id="home" href="./index.html">
         <img id="logo" src="./img/tlh_logo.png" alt="Trondheim Lindy Hop-logo">
       </a>
       <nav>
-        <a class="navElement" href="./courses.html">Kurs</a>
-        <a class="navElement" href="./courses.html">Eventer</a>
-        <a class="navElement" href="./courses.html">Om oss</a>
+          <a class="navElement" href="./courses.html">Kurs</a>
+          <a class="navElement" href="./courses.html">Eventer</a>
+          <a class="navElement" href="./courses.html">Om oss</a>
+          <input id="translate" type="image" src="./img/translateimg.png" />
       </nav>
-      <button id="engelsk">English</button>
-    </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="hamburgermenu" onclick="toggleBlock()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- <button id="translate">Translate</button> -->
   </header>
+  <script>
+    <!-- Skjuler nav-elementer eller viser dem som blokker -->
+    function toggleBlock() { <!-- Legg JS i egen fil -->
+      var nav = document.querySelector("nav");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
