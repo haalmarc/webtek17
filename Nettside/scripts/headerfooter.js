@@ -3,7 +3,7 @@ const header = document.querySelector('#main-header');
 
 // Container div
 const container = document.createElement('div')
-container.classList.add("container");
+container.classList.add("containerHeader");
 
 // Homepage link
 const homepage = document.createElement('a');
