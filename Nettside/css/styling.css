@@ -1,3 +1,14 @@
+/* Innholdsfortegnelse
+Globals
+Header 
+Footer
+Index
+Courses
+About
+Paamelding
+*/
+
+/* ----------------- Skille ----------------- */
 /* GLOBALS */ 
 
 * {
@@ -164,6 +175,7 @@ abbr {
   border: none;
 }
 
+/* ----------------- Skille ----------------- */
 /* Courses */
   
 .one-one { 
@@ -207,7 +219,9 @@ p {
   text-align:justify;
   }
 
+/* ----------------- Skille ----------------- */
 /* About */
+
 #omoss {
   margin-top: 5%;
   margin-left: 30%;
