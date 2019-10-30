@@ -14,51 +14,85 @@ body {
 /* ----------------- Skille ----------------- */
 /* HEADER */
 
-header .containerHeader {
+header {
   height: 15vh;
   width: 100%;
   background-color: #985452;
   color: white;
-  border-bottom: 3px solid white;
   display: flex;
   align-items: center; 
   justify-content: space-between; 
   padding: 10px;
 }
 
-header nav {
+nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 60%;
 }
 
-header nav .navElement, #engelsk {
+nav .navElement {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  padding: 10px;
+  padding: 8px;
 }
 
-header .containerHeader #engelsk {
-  border: none;
-  background-color: #985452;
+#translate {
   cursor: pointer;
+  width: 30px;
 }
 
-header .navElement:hover, header .containerHeader #engelsk:hover {
+.navElement:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
 }
 
-header .containerHeader a #logo, header .containerHeader #home {
+#logo, #home {
   height: 100%;
 }
 
-header .containerHeader a #logo {
+#logo {
   width: auto;
+}
+
+/* Skjule hamburgermeny, hamburgermeny inspirert av https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+.hamburgermenu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburgermenu {
+    display: block;
+    color: white;
+    font-size: 3em;
+  }
+
+  nav {
+    display: none;
+    background-color: #985452;
+    opacity: 0.8;
+    position: absolute;
+    top: 15vh; /* Like høyt som header-høyden */
+    left: 0;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #translate {
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 3px;
+  }
 }
 
 /* ----------------- Skille ----------------- */
