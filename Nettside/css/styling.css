@@ -29,24 +29,23 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 60%;
 }
 
-nav .navElement, #engelsk {
+nav .navElement {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  padding: 10px;
+  padding: 8px;
 }
 
-#engelsk {
-  border: none;
-  background-color: #985452;
+#translate {
   cursor: pointer;
+  width: 30px;
 }
 
-.navElement:hover, #engelsk:hover {
+.navElement:hover {
   background-color: white;
   color: #985452;
   transition: 0.4s;
@@ -86,6 +85,13 @@ nav .navElement, #engelsk {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  #translate {
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 3px;
   }
 }
 
