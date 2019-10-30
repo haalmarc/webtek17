@@ -42,7 +42,11 @@ nav .navElement {
 
 #translate {
   cursor: pointer;
-  width: 30px;
+  width: 3.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
 }
 
 .navElement:hover {
@@ -92,6 +96,7 @@ nav .navElement {
     position: relative;
     margin: auto;
     padding: 3px;
+    width: 3em;
   }
 }
 
