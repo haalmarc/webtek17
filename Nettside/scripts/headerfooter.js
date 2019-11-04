@@ -30,7 +30,8 @@ navbar.appendChild(courses); // Add courses to navigation bar
 // Events link
 const events = document.createElement('a');
 events.classList.add('navElement');
-events.href = "events.html";
+events.href = "https://www.facebook.com/pg/trdlindyhop/events/?ref=page_internal";
+events.target = '_blank';
 events.appendChild(document.createTextNode("Eventer"));
 
 navbar.appendChild(events); // Add events to navigation bar
@@ -55,13 +56,14 @@ header.appendChild(navbar); // Add navigation background to header
 
 // Hamburger menu
 const hamburger = document.createElement('a');
-hamburger.href = 'javascript:void(0)';
+hamburger.href = 'javascript:void(0);';
 hamburger.classList.add('hamburgermenu');
-hamburger.onclick = 'toggleBlock';
+hamburger.onclick = function(){toggleBlock()}; // toggleBlock() defined in responsiveHeader.js
 
 // Hamburger menu icon
 const hm_icon = document.createElement('i');
-hm_icon.classList.add(['fa', 'fa-bars']);
+hm_icon.classList.add('fa', 'fa-bars');
+console.log(hm_icon.classList);
 
 hamburger.appendChild(hm_icon); // Add icon to hamburger menu
 
