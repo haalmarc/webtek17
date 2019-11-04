@@ -1,6 +1,5 @@
 /*Skjuler nav-elementer eller viser dem som blokker */
 function toggleBlock() {
-  console.log('toggleBlock');
   var nav = document.querySelector("nav");
   if (nav.style.display === "block") {
     nav.style.display = "none";
