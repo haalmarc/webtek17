@@ -7,8 +7,8 @@ function validation() // inspired by https://www.geeksforgeeks.org/form-validati
     var telephone = document.forms["myform"]["mobil"];  
     var how = document.forms["myform"]["hvordan"];  
     var check = document.forms["myform"]["medlemskapTLH"];  
-    var accept = document.forms["myform"]["aksept"];  
-   
+    var accept = document.forms["myform"]["aksept"];
+
     if (firstname.value == "")                                  
     { 
         window.alert("Skriv inn ditt fornavn."); 
@@ -22,13 +22,19 @@ function validation() // inspired by https://www.geeksforgeeks.org/form-validati
         lastname.focus(); 
         return false; 
     } 
-       
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
     if (epost.value == "")                                   
     { 
         window.alert("Skriv inn din epost"); 
         epost.focus(); 
         return false; 
     } 
+    if (!epost.value.match(mailformat))
+    {
+        window.alert("Oppgi gyldig epost format")
+        epost.focus(); 
+        return false; 
+    }
    
     if (classe.selectedIndex <1 )                           
     { 
@@ -41,6 +47,13 @@ function validation() // inspired by https://www.geeksforgeeks.org/form-validati
     { 
         window.alert("Oppgi ditt mobilnummer"); 
         telephone.focus(); 
+        return false; 
+    } 
+    var phoneformat = /(0047|\+47|47)?\d{8}/; // inspirert av https://stackoverflow.com/questions/34001939/regular-expression-for-norwegian-numbers
+    if (!telephone.value.match(phoneformat))
+    {
+        window.alert("Oppgi gyldig mobil nummer")
+        epost.focus(); 
         return false; 
     } 
    
