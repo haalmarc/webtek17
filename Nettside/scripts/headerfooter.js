@@ -63,7 +63,6 @@ hamburger.onclick = function(){toggleBlock()}; // toggleBlock() defined in respo
 // Hamburger menu icon
 const hm_icon = document.createElement('i');
 hm_icon.classList.add('fa', 'fa-bars');
-console.log(hm_icon.classList);
 
 hamburger.appendChild(hm_icon); // Add icon to hamburger menu
 
