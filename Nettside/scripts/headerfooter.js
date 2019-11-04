@@ -72,18 +72,30 @@ header.appendChild(hamburger); // Add hamburger menu to header
 const footer = document.querySelector('#main-footer');
 
 // Facebook
+const facebookLink = document.createElement('a');
+facebookLink.href = 'https://www.facebook.com/trdlindyhop/';
+facebookLink.target = '_blank';
+
 const facebookLogo = document.createElement('img');
 facebookLogo.src = "img/facebookLogo.png";
 facebookLogo.alt = "facebook";
 
-footer.appendChild(facebookLogo); // Add facebook to header
+facebookLink.appendChild(facebookLogo); // Add logo to facebook link
+
+footer.appendChild(facebookLink); // Add facebook to header
 
 // Instagram
+const instagramLink = document.createElement('a');
+instagramLink.href = 'https://www.instagram.com/trondheimlindyhop/';
+instagramLink.target = '_blank';
+
 const instagramLogo = document.createElement('img');
 instagramLogo.src = "img/instagramLogo.png";
 instagramLogo.alt = "instagram";
 
-footer.appendChild(instagramLogo); // Add instagram to header
+instagramLink.appendChild(instagramLogo); // Add logo to instagram link
+
+footer.appendChild(instagramLink); // Add instagram to header
 
 // Mail
 const mail = document.createElement('p');
