@@ -1,0 +1,105 @@
+/* Gjelder for footer og hovedside */
+
+body {
+  margin:0;
+}
+
+/* For footer */
+
+footer {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+footer img {
+  width: 3%;
+}
+
+/* For hovedsiden */
+
+#hovedtekst h1 {
+  margin:0;
+  font-size: 3.5em;
+  text-align: center;
+  color: white;
+  font-family: Georgia,Times,serif;
+}
+
+#undertekst h3 {
+  margin:5px;
+  font-size: 1.5em;
+  text-align:center;
+  color: white;
+}
+
+.bildetekst {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Slideshow til hovedsiden */
+
+.forsidebilder {
+  height: 100vh;
+}
+
+.fbilde1,.fbilde2,.fbilde3,.fbilde4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.fbilde1 {
+  background: url(img/forsidebilde1.jpg);
+  animation:fade 30s infinite;
+}
+
+.fbilde2 {
+  background: url(img/forsidebilde2.jpg);
+  animation:fade2 30s infinite;
+}
+.fbilde3 {
+  background: url(img/forsidebilde3.jpg);
+  animation:fade3 30s infinite;
+}
+
+.fbilde4 {
+  background: url(img/forsidebilde4.jpg);
+  animation:fade4 30s infinite;
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  25% { opacity: 0}
+  50% { opacity: 0 }
+  75% { opacity: 0 }
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  25% { opacity: 1}
+  50% { opacity: 0 }
+  75% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  25% { opacity: 0}
+  50% { opacity: 1 }
+  75% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  25% { opacity: 0}
+  50% { opacity: 0 }
+  75% { opacity: 1 }
+  100% { opacity: 0}
+}
