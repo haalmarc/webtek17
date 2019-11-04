@@ -1,31 +1,27 @@
-/* HEADER */
+  /* HEADER */
 const header = document.querySelector('#main-header');
-
-// Container div
-const container = document.createElement('div')
-container.classList.add("container");
 
 // Homepage link
 const homepage = document.createElement('a');
-homepage.classList.add("home");
+homepage.id = "home";
 homepage.href = "index.html";
 
 // Logo
 const logo = document.createElement('img');
-logo.id = "logo";
+logo.id = 'logo';
 logo.src = "img/tlh_logo.png";
 logo.alt = "Trondheim Lindy Hop-logo";
 
 homepage.appendChild(logo); // Add logo to homepage link
 
-container.appendChild(homepage); // Add homepage link to container div
+header.appendChild(homepage); // Add homepage link to header
 
 // Navigation bar
 const navbar = document.createElement('nav');
 
 // Courses link
 const courses = document.createElement('a');
-courses.classList.add("navElement");
+courses.classList.add('navElement');
 courses.href = "courses.html";
 courses.appendChild(document.createTextNode("Kurs"));
 
@@ -33,24 +29,44 @@ navbar.appendChild(courses); // Add courses to navigation bar
 
 // Events link
 const events = document.createElement('a');
-events.classList.add("navElement");
-events.href = "events.html";
+events.classList.add('navElement');
+events.href = "https://www.facebook.com/pg/trdlindyhop/events/?ref=page_internal";
+events.target = '_blank';
 events.appendChild(document.createTextNode("Eventer"));
 
 navbar.appendChild(events); // Add events to navigation bar
 
 // About link
 const about = document.createElement('a');
-about.classList.add("navElement");
+about.classList.add('navElement');
 about.href = "about.html";
 about.appendChild(document.createTextNode("Om oss"));
 
 navbar.appendChild(about); // Add about to navigation bar
 
-container.appendChild(navbar); // Add navigation bar to container
+// English translation
+const english = document.createElement('input');
+english.id = 'translate';
+english.type = 'image';
+english.src = 'img/translateimg.png';
 
-header.appendChild(container); // Add container to header
+navbar.appendChild(english); // Add english to navigation bar
 
+header.appendChild(navbar); // Add navigation background to header
+
+// Hamburger menu
+const hamburger = document.createElement('a');
+hamburger.href = 'javascript:void(0);';
+hamburger.classList.add('hamburgermenu');
+hamburger.onclick = function(){toggleBlock()}; // toggleBlock() defined in responsiveHeader.js
+
+// Hamburger menu icon
+const hm_icon = document.createElement('i');
+hm_icon.classList.add('fa', 'fa-bars');
+
+hamburger.appendChild(hm_icon); // Add icon to hamburger menu
+
+header.appendChild(hamburger); // Add hamburger menu to header
 
 /* FOOTER */
 const footer = document.querySelector('#main-footer');
