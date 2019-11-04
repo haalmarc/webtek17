@@ -87,8 +87,8 @@ nav .navElement {
 
   nav {
     display: none;
-    background-color: #985452;
-    opacity: 0.8;
+    z-index: 99999; /* Slik at nav-baren alltid er øverst */
+    background-color: #a7605c; /* Lysere versjon av hovedstilen */
     position: absolute;
     top: 100px; /* Like høyt som header-høyden */
     left: 0;
