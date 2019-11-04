@@ -9,7 +9,7 @@ Paamelding
 */
 
 /* ----------------- Skille ----------------- */
-/* GLOBALS */ 
+/* GLOBALS */
 
 * {
   box-sizing: border-box;
@@ -31,8 +31,8 @@ header {
   background-color: #985452;
   color: white;
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
 }
 
@@ -64,7 +64,8 @@ nav .navElement {
   transition: 0.4s;
 }
 
-#logo, #home {
+#logo,
+#home {
   height: 100%;
 }
 
@@ -109,6 +110,147 @@ nav .navElement {
   }
 }
 
+/* ----------------- Skille ----------------- */
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+footer img {
+  width: 3%;
+}
+
+/* ----------------- Skille ----------------- */
+/* INDEX */
+
+#hovedtekst h1 {
+  margin: 0;
+  font-size: 3.5em;
+  text-align: center;
+  color: white;
+  font-family: Georgia, Times, serif;
+}
+
+#undertekst h3 {
+  margin: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+.bildetekst {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Slideshow til hovedsiden */
+
+.forsidebilder {
+  height: 100vh;
+}
+
+.fbilde1,
+.fbilde2,
+.fbilde3,
+.fbilde4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.fbilde1 {
+  background: url(../img/forsidebilde1.jpg);
+  animation: fade 30s infinite;
+}
+
+.fbilde2 {
+  background: url(../img/forsidebilde2.jpg);
+  animation: fade2 30s infinite;
+}
+.fbilde3 {
+  background: url(../img/forsidebilde3.jpg);
+  animation: fade3 30s infinite;
+}
+
+.fbilde4 {
+  background: url(../img/forsidebilde4.jpg);
+  animation: fade4 30s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /* ----------------- Skille ----------------- */
 /* Påmelding */
@@ -127,10 +269,14 @@ abbr {
   text-decoration: none; /* Remove the dotted line from abbreviations */
 }
 
-[type=text], [type=number], [type=email],[type=tel], select{
+[type="text"],
+[type="number"],
+[type="email"],
+[type="tel"],
+select {
   -webkit-box-sizing: border-box; /* Må brukes for å gjøre <select> til lik størrelse som <input> */
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   border: 1px, solid, #cccccc;
   text-indent: 4px;
@@ -141,8 +287,9 @@ abbr {
   white-space: nowrap; /* Få asteriksen '*' til å være på linje med skjemaet */
 }
 
-.skjemaKnapp {            /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
-  background-color:#985452;
+.skjemaKnapp {
+  /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
+  background-color: #985452;
   border: none;
   color: white;
   padding: 15px 40px;
@@ -157,7 +304,8 @@ abbr {
   background-color: #b24e4b;
 }
 
-.container { /* Samme som i courses */
+.container {
+  /* Samme som i courses */
   width: 80%;
   height: 60%;
   margin: 10%;
@@ -178,23 +326,20 @@ abbr {
 
 /* ----------------- Skille ----------------- */
 /* Courses */
-  
-.one-one { 
-  display: inline-block;
+
+.one-one {
   float: left;
   width: 48%;
   height: 300px;
 }
-  
+
 .one-two {
-  display: inline-block;
   float: right;
   width: 48%;
   height: 300px;
 }
 
 .two-one {
-  display: inline-block;
   float: left;
   margin-top: 4%;
   margin-bottom: 10%;
@@ -203,22 +348,23 @@ abbr {
 }
 
 .two-two {
-display: inline-block;
-float: right;
-margin-top: 4%;
-margin-bottom: 10%;
-margin-left: auto;
-margin-right: auto;
-width: 48%;
-height: 300px;
+  float: right;
+  margin-top: 4%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 48%;
+  height: 300px;
 }
+
 .one-two img {
   margin: auto;
   display: block;
 }
+
 p {
-  text-align:justify;
-  }
+  text-align: justify;
+}
 
 /* ----------------- Skille ----------------- */
 /* About */
@@ -234,8 +380,8 @@ p {
   position: relative;
   text-align: center;
   color: white;
-
 }
+
 .piccontainer img {
   width: 100%;
 }
