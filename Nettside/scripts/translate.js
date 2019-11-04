@@ -1,12 +1,15 @@
 function googleTranslateElementInit(){
+    //Generate div for the google translate element
     let translateElement = document.createElement("div");
     translateElement.id = "google_translate_element";
     let header = document.querySelector("header");
     let body = document.querySelector("body");
     body.insertBefore(translateElement, header);
 
+    //Remove eventlistener from button to prevent stacking elements
     document.getElementById("translate").removeEventListener("click",translateGoogle);
 
+    //Construct with the set arguments
     new google.translate.TranslateElement(
         {
         pageLanguage: 'no', 
@@ -21,5 +24,5 @@ function _setupNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)a.hasOwn
 if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google.translate._const');c._cest = gtConstEvalStartTime;gtConstEvalStartTime = undefined;c._cl='no';c._cuc='googleTranslateElementInit';c._cac='';c._cam='';c._ctkk='436911.579353047';var h='translate.googleapis.com';var s=(true?'https':window.location.protocol=='https:'?'https':'http')+'://';var b=s+h;c._pah=h;c._pas=s;c._pbi=b+'/translate_static/img/te_bk.gif';c._pci=b+'/translate_static/img/te_ctrl3.gif';c._pli=b+'/translate_static/img/loading.gif';c._plla=h+'/translate_a/l';c._pmi=b+'/translate_static/img/mini_google.png';c._ps=b+'/translate_static/css/translateelement.css';c._puh='translate.google.com';_loadCss(c._ps);_loadJs(b+'/translate_static/js/element/main_no.js');})();})();
 }
 
-
+//Add eventlistener to button
 document.getElementById("translate").addEventListener("click", translateGoogle);
