@@ -42,6 +42,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
 }
 
 nav {
@@ -299,23 +300,6 @@ select {
   white-space: nowrap; /* Få asteriksen '*' til å være på linje med skjemaet */
 }
 
-.skjemaKnapp {
-  /* Samme som i courses. Tror dette vil se bedre ut enn en default browser knapp slik som i mockupen */
-  background-color: #985452;
-  border: none;
-  color: white;
-  padding: 15px 40px;
-  text-align: center;
-  font-size: 2em;
-  cursor: pointer;
-  margin: auto;
-  display: block;
-}
-
-.skjemaKnapp:hover {
-  background-color: #b24e4b;
-}
-
 .container {
   /* Samme som i courses */
   width: 80%;
@@ -326,6 +310,24 @@ select {
 
 .inputlinje {
   display: block;
+}
+
+/* Knappen benyttes både i courses.html og paamelding.html */
+
+.skjemaKnapp {
+  background-color: #985452;
+  border: none;
+  color: white;
+  padding: 0.5em 2em;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 2em auto;
+  display: block;
+}
+
+.skjemaKnapp:hover {
+  background-color: #b24e4b;
 }
 
 #aksept {
@@ -381,11 +383,11 @@ select {
 /* ----------------- Skille ----------------- */
 /* About */
 
-#omoss {
-  margin-top: 5%;
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: center;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2em;
 }
 
 .piccontainer {
@@ -403,4 +405,26 @@ select {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#omossContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+@media only screen and (max-width: 700px) {
+  .textContainer {
+    width: 70%;
+  }
+  
+  #omossContent {
+    flex-direction: column;
+  }
+
+  .piccontainer h1 {
+    top: 30%;
+    font-size: 3em;
+  }
 }
