@@ -1,6 +1,6 @@
 /* Innholdsfortegnelse
 Globals
-Header 
+Header
 Footer
 Index
 Courses
@@ -115,12 +115,20 @@ nav .navElement {
 
 footer {
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 2em 0;
+  background-color: #985452;
+  height: 180px;
 }
 
 footer img {
-  width: 3%;
+  width: 2em;
+  margin: 3px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-family: Georgia, Times, serif;
 }
 
 /* ----------------- Skille ----------------- */
