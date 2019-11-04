@@ -80,7 +80,7 @@ const facebookLogo = document.createElement('img');
 facebookLogo.src = "img/facebookLogo.png";
 facebookLogo.alt = "facebook";
 
-facebookLink.appendChild(facebookLogo);
+facebookLink.appendChild(facebookLogo); // Add logo to facebook link
 
 footer.appendChild(facebookLink); // Add facebook to header
 
@@ -93,7 +93,7 @@ const instagramLogo = document.createElement('img');
 instagramLogo.src = "img/instagramLogo.png";
 instagramLogo.alt = "instagram";
 
-instagramLink.appendChild(instagramLogo);
+instagramLink.appendChild(instagramLogo); // Add logo to instagram link
 
 footer.appendChild(instagramLink); // Add instagram to header
 
