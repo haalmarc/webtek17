@@ -3,7 +3,7 @@ const header = document.querySelector('#main-header');
 
 // Homepage link
 const homepage = document.createElement('a');
-homepage.classList.add("home");
+homepage.id = "home";
 homepage.href = "index.html";
 
 // Logo
