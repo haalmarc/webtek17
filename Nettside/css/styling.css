@@ -178,21 +178,21 @@ footer p {
 }
 
 .fbilde1 {
-  background: url(../img/forsidebilde1.jpg);
+  background-image: url(../img/forsidebilde1.jpg);
   animation: fade 30s infinite;
 }
 
 .fbilde2 {
-  background: url(../img/forsidebilde2.jpg);
+  background-image: url(../img/forsidebilde2.jpg);
   animation: fade2 30s infinite;
 }
 .fbilde3 {
-  background: url(../img/forsidebilde3.jpg);
+  background-image: url(../img/forsidebilde3.jpg);
   animation: fade3 30s infinite;
 }
 
 .fbilde4 {
-  background: url(../img/forsidebilde4.jpg);
+  background-image: url(../img/forsidebilde4.jpg);
   animation: fade4 30s infinite;
 }
 
@@ -291,7 +291,7 @@ select {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  border: 1px, solid, #cccccc;
+  border: 1px solid #cccccc;
   text-indent: 4px;
   padding: 10px;
 }
@@ -438,7 +438,7 @@ select {
   .textContainer {
     width: 70%;
   }
-  
+
   #omossContent {
     flex-direction: column;
   }
