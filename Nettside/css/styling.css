@@ -56,6 +56,7 @@ nav .navElement {
   font-size: 1.2em;
   padding: 8px;
   margin-right: 1em;
+  opacity: 0.9;
 }
 
 #translate {
@@ -68,9 +69,10 @@ nav .navElement {
 }
 
 .navElement:hover {
-  background-color: white;
-  color: #985452;
-  transition: 0.4s;
+  border-bottom: white 2px solid;
+  border-top:  white 2px solid;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 #logo,
@@ -302,10 +304,21 @@ select {
 
 .container {
   /* Samme som i courses */
-  width: 80%;
+  display: flex;
+  flex-direction: column;
   height: 60%;
-  margin: 10%;
-  grid-column-gap: 20px;
+}
+.rowcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0.5em 2em;
+}
+
+#reverseRow {
+  flex-wrap: wrap-reverse;
 }
 
 .inputlinje {
@@ -341,40 +354,20 @@ select {
 /* ----------------- Skille ----------------- */
 /* Courses */
 
-.one-one {
-  float: left;
+.tekstboks {
   width: 48%;
-  height: 300px;
+  min-width: 300px;
 }
 
-.one-two {
-  float: right;
+.bildeboks {
+  display: flex;
+  justify-content: center;
   width: 48%;
   height: 300px;
+  margin: 1em;
+  
 }
-
-.two-one {
-  float: left;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  width: 48%;
-  height: 300px;
-}
-
-.two-two {
-  float: right;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 48%;
-  height: 300px;
-}
-
-.one-two img {
-  margin: auto;
-  display: block;
-}
+/* Legge bilde i egen class. Legge tekst i egen class */ 
 
 .coursetext {
   text-align: justify;
@@ -412,24 +405,6 @@ select {
   justify-content: center;
   align-items: center;
   margin: 3%;
-}
-
-
-@media only screen and (max-width: 800px) {
-  /* Courses */
-
-  .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  margin: 0;
-  }
-
-  .gridEl {
-    float: none;
-    margin: 0;
-  }
 }
 
 @media only screen and (max-width: 700px) {
