@@ -44,15 +44,27 @@ about.appendChild(document.createTextNode("Om oss"));
 
 navbar.appendChild(about); // Add about to navigation bar
 
-// English translation
-const english = document.createElement('input');
-english.id = 'translate';
-english.type = 'image';
-english.src = 'img/translateimg.png';
+// English translation for mobile
+const english_mob = document.createElement('input');
+english_mob.id = 'translate_phone';
+english_mob.classList.add('translate')
+english_mob.type = 'image';
+english_mob.src = 'img/translateimg.png';
+english_mob.alt = 'translate';
 
-navbar.appendChild(english); // Add english to navigation bar
+navbar.appendChild(english_mob); // Add translation for mobile to navigation bar
 
 header.appendChild(navbar); // Add navigation background to header
+
+// English translation for desktop
+const english_desk = document.createElement('input');
+english_desk.id = 'translate_desk';
+english_desk.classList.add('translate')
+english_desk.type = 'image';
+english_desk.src = 'img/translateimg.png';
+english_desk.alt = 'translate';
+
+header.appendChild(english_desk); // Add translation for desktop to header
 
 // Hamburger menu
 const hamburger = document.createElement('a');
