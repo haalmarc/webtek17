@@ -48,7 +48,10 @@ header {
 }
 
 nav {
-  width: 63%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 nav .navElement {
@@ -127,6 +130,8 @@ nav .navElement {
 /* FOOTER */
 
 footer {
+  position: absolute;
+  width: 100%;
   text-align: center;
   padding: 2em 0;
   background-color: #985452;
