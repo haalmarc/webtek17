@@ -380,7 +380,7 @@ select {
   text-align: center;
   font-size: 2em;
   cursor: pointer;
-  margin: 1em auto;
+  margin: 1em 0;
   display: block;
 }
 
@@ -390,6 +390,11 @@ select {
 
 #aksept {
   margin-bottom: 25px;
+}
+
+label[for='aksept'],
+label[for='medlemskap'] {
+  white-space: normal;
 }
 
 /* ----------------------------------- SKILLE ----------------------------------- */
