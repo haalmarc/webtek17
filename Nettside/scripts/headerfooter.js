@@ -111,7 +111,10 @@ footer.appendChild(instagramLink); // Add instagram to header
 
 // Mail
 const mail = document.createElement('p');
-mail.appendChild(document.createTextNode(" trdkurs@gmail.com "));
+const maila = document.createElement('a');
+mail.appendChild(maila);
+maila.href = "mailto:trdkurs@gmail.com"; // Turn mail into a clickable link
+maila.appendChild(document.createTextNode(" trdkurs@gmail.com "));
 
 footer.appendChild(mail); // Add mail to footer
 
