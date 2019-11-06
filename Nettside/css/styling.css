@@ -455,7 +455,8 @@ iframe {
   }
 
   .piccontainer h1 {
-    top: 30%;
+    white-space: nowrap;
+    top: 25%;
     font-size: 3em;
   }f
 }
