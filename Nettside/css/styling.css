@@ -109,7 +109,7 @@ nav .navElement {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .hamburgermenu {
     display: block;
     color: white;
@@ -302,7 +302,7 @@ legend {
 
 form {
   width: 70%;
-  margin: auto;
+  margin: 2em auto;
 }
 
 abbr {
@@ -375,7 +375,7 @@ select {
 }
 
 #reverseRow {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; /* For tekst-bilde tekst-bilde */
 }
 
 .rowElements {
