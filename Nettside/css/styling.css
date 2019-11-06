@@ -8,7 +8,7 @@ About
 Paamelding
 */
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* GLOBALS */
 
 * {
@@ -16,13 +16,15 @@ Paamelding
 }
 
 body {
-  font-family: Georgia,Times,serif;
+  font-family: Georgia, Times, serif;
   padding: 0;
   margin: 0;
   background-color: white;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -30,14 +32,13 @@ h1 {
   font-size: 3.5em;
 }
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* HEADER */
 
 header {
   height: 120px;
   width: 100%;
   background-color: #985452;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +47,10 @@ header {
 }
 
 nav {
-  width: 63%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 nav .navElement {
@@ -56,21 +60,39 @@ nav .navElement {
   font-size: 1.2em;
   padding: 8px;
   margin-right: 1em;
+  opacity: 0.9; /* For å skape hover-effekt */ 
 }
 
-#translate {
+/* Translate-knapp START. En vises kun i hamburgermeny, en er plassert oppe til høyre. */
+
+.translate {
   cursor: pointer;
   width: 3.5em;
-  position: absolute;
-  top: 0;
-  right: 0;
   margin: 5px;
 }
 
+#translate_desk {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#translate_phone {
+  display: none;
+  position: relative;
+  margin: auto;
+  padding: 3px;
+  width: 3em;
+}
+
+/* Translate-knapp SLUTT */
+
 .navElement:hover {
-  background-color: white;
-  color: #985452;
-  transition: 0.4s;
+  border-bottom: white 2px solid;
+  border-top: white 2px solid;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 #logo,
@@ -87,7 +109,7 @@ nav .navElement {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .hamburgermenu {
     display: block;
     color: white;
@@ -99,8 +121,7 @@ nav .navElement {
     z-index: 99999; /* Slik at nav-baren alltid er øverst */
     background-color: #a7605c; /* Lysere versjon av hovedstilen */
     position: absolute;
-    top: 120px; /* Like høyt som header-høyden */
-    left: 0;
+    top: 195px; /* Avhenger av antall elementer i nav */
     width: 100%;
   }
 
@@ -110,19 +131,21 @@ nav .navElement {
     text-align: center;
   }
 
-  #translate {
+  #translate_desk {
+    display: none;
+  }
+
+  #translate_phone {
     display: block;
-    position: relative;
-    margin: auto;
-    padding: 3px;
-    width: 3em;
   }
 }
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* FOOTER */
 
 footer {
+  position: absolute;
+  width: 100%;
   text-align: center;
   padding: 2em 0;
   background-color: #985452;
@@ -140,7 +163,7 @@ footer p {
   font-family: Georgia, Times, serif;
 }
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* INDEX */
 
 #hovedtekst h1 {
@@ -265,8 +288,12 @@ footer p {
   }
 }
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* Påmelding */
+
+fieldset {
+  border: none;
+}
 
 legend {
   margin: auto;
@@ -275,7 +302,7 @@ legend {
 
 form {
   width: 70%;
-  margin: auto;
+  margin: 2em auto;
 }
 
 abbr {
@@ -300,14 +327,6 @@ select {
   white-space: nowrap; /* Få asteriksen '*' til å være på linje med skjemaet */
 }
 
-.container {
-  /* Samme som i courses */
-  width: 80%;
-  height: 60%;
-  margin: 10%;
-  grid-column-gap: 20px;
-}
-
 .inputlinje {
   display: block;
 }
@@ -315,14 +334,16 @@ select {
 /* Knappen benyttes både i courses.html og paamelding.html */
 
 .skjemaKnapp {
+  font-family: Georgia, Times, serif;
   background-color: #985452;
   border: none;
+  border-radius: 12px;
   color: white;
   padding: 0.5em 2em;
   text-align: center;
   font-size: 2em;
   cursor: pointer;
-  margin: 2em auto;
+  margin: 1em auto;
   display: block;
 }
 
@@ -334,59 +355,57 @@ select {
   margin-bottom: 25px;
 }
 
-#paamelding {
-  border: none;
-}
-
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* Courses */
 
-.one-one {
-  float: left;
-  width: 48%;
-  height: 300px;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  margin: 1em auto;
 }
 
-.one-two {
-  float: right;
-  width: 48%;
-  height: 300px;
+.rowcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0.5em 2em;
 }
 
-.two-one {
-  float: left;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  width: 48%;
-  height: 300px;
+#reverseRow {
+  flex-wrap: wrap-reverse; /* For tekst-bilde tekst-bilde */
 }
 
-.two-two {
-  float: right;
-  margin-top: 4%;
-  margin-bottom: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 48%;
-  height: 300px;
+.rowElements {
+  width: 20%;
+  min-width: 300px;
+  margin: 0 4em;
 }
 
-.one-two img {
-  margin: auto;
-  display: block;
+.bildeboks {
+  display: flex;
+  justify-content: center;
 }
 
 .coursetext {
   text-align: justify;
 }
 
-/* ----------------- Skille ----------------- */
+/* ----------------------------------- SKILLE ----------------------------------- */
 /* About */
+
+iframe {
+  width: 420px;
+  height: 260px;
+  border: 0;
+}
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   margin: 2em;
 }
 
@@ -414,26 +433,8 @@ select {
   margin: 3%;
 }
 
-
-@media only screen and (max-width: 800px) {
-  /* Courses */
-
-  .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  margin: 0;
-  }
-
-  .gridEl {
-    float: none;
-    margin: 0;
-  }
-}
-
 @media only screen and (max-width: 700px) {
-  /* Om oss */
+  /* About */
 
   .textContainer {
     width: 70%;

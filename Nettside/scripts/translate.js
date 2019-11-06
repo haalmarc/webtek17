@@ -7,7 +7,8 @@ function googleTranslateElementInit(){
     body.insertBefore(translateElement, header);
 
     //Remove eventlistener from button to prevent stacking elements
-    document.getElementById("translate").removeEventListener("click",translateGoogle);
+    document.getElementById("translate_phone").removeEventListener("click",translateGoogle);
+    document.getElementById("translate_desk").removeEventListener("click",translateGoogle);
 
     //Construct with the set arguments
     new google.translate.TranslateElement(
@@ -25,4 +26,5 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 }
 
 //Add eventlistener to button
-document.getElementById("translate").addEventListener("click", translateGoogle);
+document.getElementById("translate_phone").addEventListener("click", translateGoogle);
+document.getElementById("translate_desk").addEventListener("click", translateGoogle);
