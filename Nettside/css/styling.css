@@ -261,13 +261,13 @@ footer p {
   0% {
     opacity: 1;
   }
+  20% {
+    opacity: 1;
+  }
   25% {
     opacity: 0;
   }
-  50% {
-    opacity: 0;
-  }
-  75% {
+  95% {
     opacity: 0;
   }
   100% {
@@ -278,13 +278,16 @@ footer p {
   0% {
     opacity: 0;
   }
+  20% {
+    opacity: 0;
+  }
   25% {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  45% {
+    opacity: 1;
   }
-  75% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -295,10 +298,13 @@ footer p {
   0% {
     opacity: 0;
   }
-  25% {
+  45% {
     opacity: 0;
   }
   50% {
+    opacity: 1;
+  }
+  70% {
     opacity: 1;
   }
   75% {
@@ -312,13 +318,13 @@ footer p {
   0% {
     opacity: 0;
   }
-  25% {
-    opacity: 0;
-  }
-  50% {
+  70% {
     opacity: 0;
   }
   75% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
