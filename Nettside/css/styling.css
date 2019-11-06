@@ -118,13 +118,14 @@ nav .navElement {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 3px;
 }
 
 #translate_phone {
   display: none;
   position: relative;
   margin: auto;
-  padding: 3px;
+  padding: 2px 0 8px 0;
   width: 3em;
 }
 
