@@ -1,5 +1,5 @@
 /*Skjuler nav-elementer eller viser dem som blokker */
-function toggleBlock() {  
+function toggleBlock() {
   var nav = document.querySelector("nav");
   if (nav.style.display === "block") {
     nav.style.display = "none";
@@ -8,8 +8,8 @@ function toggleBlock() {
   }
 }
 
-/* Setter nav til display: block ved over 600px bredde. Hentet fra https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener */
-var mql = window.matchMedia('(min-width: 600px)');
+/* Setter nav til display: block ved over 700px bredde. Hentet fra https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener */
+var mql = window.matchMedia('(min-width: 700px)');
 function screenTest(e) {
   if (e.matches) {
     var nav = document.querySelector("nav");
