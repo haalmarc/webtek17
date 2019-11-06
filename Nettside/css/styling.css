@@ -381,7 +381,7 @@ select {
   text-align: center;
   font-size: 2em;
   cursor: pointer;
-  margin: 1em 0;
+  margin: 1em auto;
   display: block;
 }
 
@@ -501,5 +501,5 @@ iframe {
     white-space: nowrap;
     top: 25%;
     font-size: 3em;
-  }f
+  }
 }
