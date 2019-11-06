@@ -121,7 +121,7 @@ nav .navElement {
     z-index: 99999; /* Slik at nav-baren alltid er øverst */
     background-color: #a7605c; /* Lysere versjon av hovedstilen */
     position: absolute;
-    top: 195px; /* Avhenger av antall elementer i nav */
+    top: 190px; /* Avhenger av antall elementer i nav */
     width: 100%;
   }
 
@@ -443,7 +443,7 @@ iframe {
 
   .videoContainer {
     width: 300px;
-    height: auto;
+    height: 200px;
   }
 
   .textContainer {
