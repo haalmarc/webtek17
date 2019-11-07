@@ -2,9 +2,9 @@ function googleTranslateElementInit(){
     //Generate div for the google translate element
     let translateElement = document.createElement("div");
     translateElement.id = "google_translate_element";
-    let header = document.querySelector("header");
+    let wrapper = document.querySelector(".wrapper");
     let body = document.querySelector("body");
-    body.insertBefore(translateElement, header);
+    body.insertBefore(translateElement, wrapper);
 
     //Remove eventlistener from button to prevent stacking elements
     document.getElementById("translate_phone").removeEventListener("click",translateGoogle);
