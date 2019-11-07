@@ -33,6 +33,16 @@ h1 {
   font-size: 3.5em;
 }
 
+/* Content wrapper, slik at footeren alltid er på bunn, selv med lite innhold */
+
+#page-container {
+  min-height: 100%;
+}
+
+#content-wrap {
+  padding-bottom: 180px;    /* Footer height */
+}
+
 /* ----------------------------------- SKILLE ----------------------------------- */
 /* HEADER */
 
@@ -182,12 +192,13 @@ nav .navElement {
 /* FOOTER */
 
 footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
   padding: 2em 0;
   background-color: #985452;
   height: 180px;
+  margin-top: -180px; /* Samme som høyde på footer */
 }
 
 footer img {
