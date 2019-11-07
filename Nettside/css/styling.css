@@ -40,7 +40,8 @@ h1 {
 }
 
 #content-wrap {
-  padding-bottom: 180px;    /* Footer height */
+  padding-bottom: 190px;    /* Footer height + 10px */
+  overflow: auto;
 }
 
 /* ----------------------------------- SKILLE ----------------------------------- */
