@@ -111,22 +111,18 @@ footer.appendChild(instagramLink); // Add instagram to header
 
 // Mail
 const mail = document.createElement('p');
+
+// mailto link
 const maila = document.createElement('a');
-mail.appendChild(maila);
 maila.href = "mailto:trdkurs@gmail.com"; // Turn mail into a clickable link
-maila.appendChild(document.createTextNode(" trdkurs@gmail.com "));
+maila.appendChild(document.createTextNode("trdkurs@gmail.com"));
+
+mail.appendChild(maila); // Add mailto link to mail
 
 footer.appendChild(mail); // Add mail to footer
 
 // Address
 const address = document.createElement('p');
-address.appendChild(document.createTextNode(" Østersundsgate 1, 7042 Trondheim "));
+address.appendChild(document.createTextNode("Østersundsgate 1, 7042 Trondheim"));
 
 footer.appendChild(address); // Add address to footer
-
-/*const body = document.querySelector('body');
-body.insertAdjacentHTML('afterstart',
-`<div class="container"><a class="home" href="./index.html"><img id="logo" src="./img/tlh_logo.png" alt="Trondheim Lindy Hop-logo">      </a><nav><a class="navElement" href="./courses.html">Kurs</a><a class="navElement" href="./courses.html">Eventer</a><a class="navElement" href="./courses.html">Om oss</a></nav><button id="engelsk">English</button></div>;
-
-body.insertAdjacentHTML('beforeend',
-`<footer><img src="img/facebookLogo.png" alt="facebookLogo"><img src="img/instagramLogo.png" alt="instagramLogo"><p> trdkurs@gmail.com </p><p> Østersundsgate 1, 7042 Trondheim </p></footer>`);*/
