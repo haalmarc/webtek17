@@ -199,7 +199,7 @@ footer {
   padding: 2em 0;
   background-color: #985452;
   height: 180px;
-  margin-top: -170px; /* Samme som høyde på footer - 10px */
+  margin-top: -180px; /* Samme som høyde på footer */
 }
 
 footer img {
