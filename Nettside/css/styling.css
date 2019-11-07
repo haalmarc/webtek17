@@ -180,6 +180,11 @@ nav .navElement {
 
 /* ----------------------------------- SKILLE ----------------------------------- */
 /* FOOTER */
+.wrapper {
+  position: absolute;
+  min-height: calc(100vh - 180px);
+  width: 100%;
+}
 
 footer {
   position: absolute;
@@ -188,6 +193,7 @@ footer {
   padding: 2em 0;
   background-color: #985452;
   height: 180px;
+  top: 100%;
 }
 
 footer img {
