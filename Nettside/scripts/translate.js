@@ -32,19 +32,23 @@ document.getElementById("translate_desk").addEventListener("click", translateGoo
 
 // If translate has been toggled, store it as true on the site
 function changeLinks(transOn){
+    let linkChange = "?en=true"
     url_string = window.location.href;
-    if ((url_string.includes("en=true")|| transOn == true)){
+    if (transOn == true){   
         //Home link
         let logo = document.getElementById("home");
-        logo.href = logo.href + "?en=true";
+        logo.href = logo.href + linkChange;
         //Nav links
         let navArray = document.getElementsByClassName("navElement");
         for (let i = 0; i < navArray.length; i++, i++){ //Ikke riktig måte å gjøre dette på, men den "riktige" måten fungerte ikke og dette har samme effekt
-            navArray[i].href = navArray[i].href + "?en=true"
+            navArray[i].href = navArray[i].href + linkChange
+        }
+        if (url_string.includes("courses.html")){
+            console.log("rearg")
+            linkFunc,'paamelding.html?en=true'
         }
     }
 }
-changeLinks(false);
 
 //If translate has been toggled, automatically run translate function
 if (window.location.href.includes("en=true")){
