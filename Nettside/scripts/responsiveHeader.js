@@ -20,4 +20,11 @@ mql.addListener(screenTest);
 
 
 // Lukk meny
-document.getElementById("textBody").addEventListener("click", toggleBlock)
+function makeBlock(){
+  var nav = document.querySelector("nav");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  }
+}
+
+document.getElementById("textBody").addEventListener("click", makeBlock)
