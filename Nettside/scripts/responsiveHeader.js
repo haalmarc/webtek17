@@ -17,3 +17,7 @@ function screenTest(e) {
   }
 }
 mql.addListener(screenTest);
+
+
+// Lukk meny
+document.getElementById("textBody").addEventListener("click", toggleBlock)
