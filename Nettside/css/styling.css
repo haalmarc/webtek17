@@ -67,16 +67,21 @@ nav .navElement {
 /* Hover stilsetting inspirert av: https://codepen.io/Taylor132465/pen/ONOzeJ */
 .navElement,
 .navElement:after,
-.navElement:before {
+.navElement:before,
+#courserefer,
+#courserefer:after,
+#courserefer:before {
   transition: all .5s;
 }
 
-.navElement {
+.navElement,
+#courserefer {
   position: relative;
   transition: all 1s;
 }
 
-.navElement:after {
+.navElement:after,
+#courserefer:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -92,13 +97,15 @@ nav .navElement {
   opacity: 0;
 }
 
-.navElement:hover:after {
+.navElement:hover:after,
+#courserefer:hover:after {
   width: 100%;
   animation: fill 1s forwards;
   opacity: 1;
 }
 
-.navElement:hover {
+.navElement:hover,
+#courserefer:hover {
   opacity: 0.5;
 }
 
@@ -229,6 +236,12 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#courserefer:link, #courserefer:visited, #courserefer:hover {
+  color:white;
+  text-decoration: none;
+}
+
+
 
 /* Slideshow til hovedsiden */
 
