@@ -33,7 +33,6 @@ document.getElementById("translate_desk").addEventListener("click", translateGoo
 // If translate has been toggled, store it as true on the site
 function changeLinks(transOn){
     url_string = window.location.href;
-    let navArray = document.getElementsByClassName("navElement");
     if ((url_string.includes("en=true")|| transOn == true)){
         //Home link
         let logo = document.getElementById("home");
