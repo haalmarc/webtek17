@@ -114,8 +114,8 @@ const mail = document.createElement('p');
 
 // mailto link
 const mail_a = document.createElement('a');
-mail_a.href = "mailto:trdkurs@gmail.com"; // Turn mail into a clickable link
-mail_a.appendChild(document.createTextNode("trdkurs@gmail.com"));
+mail_a.href = "mailto:kurs@trondheimlindy.no"; // Turn mail into a clickable link
+mail_a.appendChild(document.createTextNode("kurs@trondheimlindy.no"));
 
 mail.appendChild(mail_a); // Add mailto link to mail
 
