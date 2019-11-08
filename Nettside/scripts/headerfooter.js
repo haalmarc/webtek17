@@ -113,16 +113,23 @@ footer.appendChild(instagramLink); // Add instagram to header
 const mail = document.createElement('p');
 
 // mailto link
-const maila = document.createElement('a');
-maila.href = "mailto:trdkurs@gmail.com"; // Turn mail into a clickable link
-maila.appendChild(document.createTextNode("trdkurs@gmail.com"));
+const mail_a = document.createElement('a');
+mail_a.href = "mailto:trdkurs@gmail.com"; // Turn mail into a clickable link
+mail_a.appendChild(document.createTextNode("trdkurs@gmail.com"));
 
-mail.appendChild(maila); // Add mailto link to mail
+mail.appendChild(mail_a); // Add mailto link to mail
 
 footer.appendChild(mail); // Add mail to footer
 
 // Address
 const address = document.createElement('p');
-address.appendChild(document.createTextNode("Østersundsgate 1, 7042 Trondheim"));
+
+// Google Maps Link
+const address_a = document.createElement('a');
+address_a.href = 'https://www.google.no/maps/place/%C3%98stersunds+gate+1';
+address_a.target = '_blank';
+address_a.appendChild(document.createTextNode("Østersundsgate 1, 7042 Trondheim"));
+
+address.appendChild(address_a); // Add link to address
 
 footer.appendChild(address); // Add address to footer
