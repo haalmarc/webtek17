@@ -19,6 +19,7 @@ function googleTranslateElementInit(){
   }
 
 function translateGoogle(){
+    changeLinks(true);
     // Code from Google plugin
     (function(){var gtConstEvalStartTime = new Date();function d(b){var a=document.getElementsByTagName("head")[0];a||(a=document.body.parentNode.appendChild(document.createElement("head")));a.appendChild(b)}function _loadJs(b){var a=document.createElement("script");a.type="text/javascript";a.charset="UTF-8";a.src=b;d(a)}function _loadCss(b){var a=document.createElement("link");a.type="text/css";a.rel="stylesheet";a.charset="UTF-8";a.href=b;d(a)}function _isNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)if(!(a=a[b[c]]))return!1;return!0}
 function _setupNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)a.hasOwnProperty?a.hasOwnProperty(b[c])?a=a[b[c]]:a=a[b[c]]={}:a=a[b[c]]||(a[b[c]]={});return a}window.addEventListener&&"undefined"==typeof document.readyState&&window.addEventListener("DOMContentLoaded",function(){document.readyState="complete"},!1);
@@ -28,3 +29,25 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 //Add eventlistener to button
 document.getElementById("translate_phone").addEventListener("click", translateGoogle);
 document.getElementById("translate_desk").addEventListener("click", translateGoogle);
+
+// If translate has been toggled, store it as true on the site
+function changeLinks(transOn){
+    url_string = window.location.href;
+    let navArray = document.getElementsByClassName("navElement");
+    if ((url_string.includes("en=true")|| transOn == true)){
+        //Home link
+        let logo = document.getElementById("home");
+        logo.href = logo.href + "?en=true";
+        //Nav links
+        let navArray = document.getElementsByClassName("navElement");
+        for (let i = 0; i < navArray.length; i++, i++){ //Ikke riktig måte å gjøre dette på, men den "riktige" måten fungerte ikke og dette har samme effekt
+            navArray[i].href = navArray[i].href + "?en=true"
+        }
+    }
+}
+changeLinks(false);
+
+//If translate has been toggled, automatically run translate function
+if (window.location.href.includes("en=true")){
+    translateGoogle();
+}
