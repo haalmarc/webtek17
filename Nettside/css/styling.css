@@ -340,6 +340,12 @@ footer a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #hovedtekst {
+    font-size: 0.8em;
+  }
+}
+
 /* ----------------------------------- SKILLE ----------------------------------- */
 /* Påmelding */
 
