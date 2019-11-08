@@ -450,6 +450,10 @@ label[for='medlemskap'] {
   text-align: justify;
 }
 
+.metaInfo {
+  font-style: italic;
+}
+
 /* ----------------------------------- SKILLE ----------------------------------- */
 /* About */
 
