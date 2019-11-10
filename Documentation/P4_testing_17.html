@@ -30,7 +30,7 @@
       LENKEN
       I tilleg har vi gjennomført gruppetesting med deltakere til stede. Dessuten har vi fått til live testing
       med klienten.</p>
-    <h2>Testingen</h2>
+    <h2>Testing publikum</h2>
     <p>Vi brukte forskjellige metoder for testing fom er vist under.</p>
 
     <h3>Google Forms testingen</h3>
@@ -131,14 +131,49 @@
       eventuelle forbedringer vi kunne implementere, noe vi satt pris på. Noen forslag var små justeringer, mens andre var større 
       endringer. Nedenfor diskuterer vi fordeler og ulemper med noen av endringene.</p>
 
-    <h3>Respons til tilbakemeldinger</h3>
+    <h2>Respons til tilbakemeldinger</h2>
 
-    <p>Provide your response to the feedback. Concretely, describe what you could do (once the class is over) to address
-      this feedback with changes in your design or implementation. You can also address why some of the raised issues or
-      suggestions for improvements are difficult or impossible to tackle.</p>
+    <h3>Design</h3>
+
+    <p>Alle vurderingene angående design var i fornøyd- til svært fornøyd-sjiktet, som kan eksemplifiseres med kommentatene 
+      “Enkelt og fint. Viser ikke mer enn nødvendig" og “Meget tydelig layout og flott godt design”. Fra starten av gikk vi for et 
+      enkelt design, med et fokus på lesbarhet. Dette påvirket også tekstinnholdet, hvor vi gikk for presise formuleringer, samtidig 
+      som vi ga en tilstrekkelig beskrivelse av dansen og kurs. </p>
+    <p>Noen kommenterte på at siden manglet farger, og at fargene var kjedelige eller retro. Retro var en stil vi gikk for, for å 
+      reflektere dansens røtter. Vi valgte også en font som matchet dette, som igjen hadde fokus på lesbarhet. En uttrykte et ønske om 
+      et bildegalleri. Dette kunne ha blitt lagd, for eksempel lagt inn på “Om oss”, for å gi et bedre bilde på dansegruppa. Vi konkluderte 
+      imidlertid med at bildene på slideshowet gir et tilstrekkelig bilde av gruppa, og at YouTube-videoen på “Om oss” kan oppmuntre til 
+      videre utforskning av dansen.</p>
+
+    <h3>Navigasjon og mangler</h3>
+
+    <p>Et av innspillene vi fikk var at brukeren burde få opp et varsel på at personen blir tatt videre til Facebook. Dette kunne være 
+      fordelaktig for å unngå å forlate siden. En løsning på å unngå å forlate siden, var å åpne Facebook events i ny side, og dette var 
+      et tiltak vi planla fra starten av. Etter tilbakemelding åpnet vi også vilkår og betingelser-vinduene i ny fane også, for å fortsette 
+      å være på nettsiden. </p>
+    <p>På mobil åpnes imidlertid ikke Facebook-arrangementer i en ny fane, men Facebook-applikasjonen dekker over nettsiden. Vi konkluderte 
+      med at å komme inn på Facebook direkte var ønskelig hos de fleste brukerne, for å imøtekomme ønsket om å få informasjon om eventer. 
+      Å ha et varsel som krevde et ytterligere tastetrykk for å komme videre, kunne bremse ned flyten, når man raskt ville sjekke ut eventer.</p>
+    <p>Vi fikk også en kommentar på at linken til påmeldingssiden burde ligge i headeren slik at det er lettere å finne den. Dette syntes vi var 
+      overflødig, da vi opplevde at om man ønsker å melde seg på kurs, er det naturlig å trykke på kurs. En endring vi imidlertid gjorde, var 
+      å gjøre underteksten til index “Meld deg på kurs!” til en a-tag, som videreførte en til kurssiden. Dette hadde til hensikt å gjøre 
+      kurssiden lettere tilgjengelig. For å tydeliggjøre at teksten var en link, ble teksten byttet til “Meld deg på kurs her!”. </p>
+    <p>Til slutt var både klienten og noen av respondentene ikke helt fornøyde med hvordan oversettelsesknappen fungerte. Et problem 
+      var at hver gang brukeren byttet side var de nødt til å trykke på oversettelsesknappen på nytt. Et annet problem var at den ikke 
+      oversatte alt med en gang, slik at man måtte velge engelsk i en drop down meny for at oversettelsen skulle skje. Det første problemet 
+      ble løst ved å legge til et parameter i linkene til de andre sidene. Når siden laster inn sjekker et script etter denne parametere, og 
+      kjører automatisk oversettelses-scriptet. Det andre problemet hadde vi ikke tid til å implementere en løsning på. Vi prøvde noen mulige 
+      løsninger, men kom ikke frem til noe funksjonelt innen oppgavens tidsrammer. Det var flere problemer relatert til bruken av 
+      oversettelses-pluginen til Google. Et problem er at den egentlig ikke er ment til å være knyttet til en knapp, og det krevde en 
+      god del arbeid for å få den til å samarbeide og fungere på en måte som best mulig passet til nettsiden. En annen ulempe var at Google 
+      sluttet å støtte pluginen tidligere i år, som førte til problemer på flere tilsynelatende tilfeldige områder.</p>
+
     <h2>Selvrefleksjon</h2>
+
     <h3>Felles</h3>
+
     <h3>Utnytte gruppemedlemmenes kompetanse, men også ta hensyn til ønsker</h3>
+
     <p>Gruppeprosjektet startet med en kartlegging av hva gruppemedlemmene hadde av forkunnskaper. Prosjektet innebar
       oppgaver innen koding og design, og det var varierende grad av erfaring innen disse områdene. Det viste seg også
       at de fleste ville jobbe med koding, uavhengig av erfaring. Det ble dermed et gap mellom ønske og kompetanse. For
