@@ -257,6 +257,7 @@ footer a {
   background-size: cover;
 }
 
+/* Select slideshow images and animation time (all the animations need to have the same time) */
 .fbilde1 {
   background-image: url(../img/forsidebilde1.jpg);
   animation: fade 30s infinite;
@@ -276,6 +277,8 @@ footer a {
   animation: fade4 30s infinite;
 }
 
+
+/* Fade timing is determined by the '%' value, and the fade occurs between the values where the opacity changes from 0 to 1 and back */
 @keyframes fade {
   0% {
     opacity: 1;
