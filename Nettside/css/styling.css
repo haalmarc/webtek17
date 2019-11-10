@@ -3,9 +3,9 @@ Globals
 Header
 Footer
 Index
+Paamelding
 Courses
 About
-Paamelding
 */
 
 /* ----------------------------------- SKILLE ----------------------------------- */
@@ -137,8 +137,6 @@ nav .navElement {
 
 /* Translate-knapp SLUTT */
 
-
-
 #logo,
 #home {
   height: 100%;
@@ -186,6 +184,7 @@ nav .navElement {
 
 /* ----------------------------------- SKILLE ----------------------------------- */
 /* FOOTER */
+
 .wrapper {
   position: absolute;
   min-height: calc(100vh - 180px);
@@ -367,7 +366,7 @@ fieldset {
 
 legend {
   margin: auto;
-  font-size: x-large; /* Midlertidig font størrelse*/
+  font-size: x-large; 
 }
 
 form {
@@ -376,7 +375,7 @@ form {
 }
 
 abbr {
-  text-decoration: none; /* Remove the dotted line from abbreviations */
+  text-decoration: none; /* Fjerne stiplet linje fra abbreviations */
 }
 
 [type="text"],
@@ -384,7 +383,7 @@ abbr {
 [type="email"],
 [type="tel"],
 select {
-  -webkit-box-sizing: border-box; /* Må brukes for å gjøre <select> til lik størrelse som <input> */
+  -webkit-box-sizing: border-box; /* Brukes for å gjøre <select> til lik størrelse som <input> */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -394,7 +393,7 @@ select {
 }
 
 .skjemaBoks {
-  white-space: nowrap; /* Få asteriksen '*' til å være på linje med skjemaet */
+  white-space: nowrap; /* Får asteriksen '*' til å være på linje med skjemaet */
 }
 
 .inputlinje {
@@ -450,7 +449,7 @@ label[for='medlemskap'] {
 }
 
 #reverseRow {
-  flex-wrap: wrap-reverse; /* For tekst-bilde tekst-bilde */
+  flex-wrap: wrap-reverse; /* For struktur: tekst-bilde tekst-bilde */
 }
 
 .rowElements {
