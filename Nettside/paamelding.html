@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/styling.css">
-    <link rel="shortcut icon" href="./img/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Påmelding</title>
-  </head>
-  <body>
-    <div class="wrapper">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/styling.css">
+  <link rel="shortcut icon" href="./img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Påmelding</title>
+</head>
+
+<body>
+  <div class="wrapper">
     <header id="main-header"></header>
     <div id="textBody">
       <form name="myform" onsubmit="return false">
@@ -18,55 +20,72 @@
           <legend>
             Påmelding
           </legend>
-          <p class="skjemaBoks" ><!-- Fornavn -->
+          <p class="skjemaBoks">
+            <!-- Fornavn -->
             <label for="fnavn" class="inputlinje">Fornavn: </label>
-            <input type="text" name="fornavn" id="fnavn"><span class="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span> <!-- Using abbr to make the page more accessible to screenreaders -->
+            <input type="text" name="fornavn" id="fnavn"><span class="paakrevd"><abbr title="påkrevd"
+                aria-label="påkrevd">*</abbr></span>
+            <!-- Using abbr to make the page more accessible to screenreaders -->
           </p>
-          <p class="skjemaBoks"> <!-- Etternavn -->
+          <p class="skjemaBoks">
+            <!-- Etternavn -->
             <label for="enavn" class="inputlinje">Etternavn: </label>
-            <input type="text" name="etternavn" id="enavn"><span class="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
+            <input type="text" name="etternavn" id="enavn"><span class="paakrevd"><abbr title="påkrevd"
+                aria-label="påkrevd">*</abbr></span>
           </p>
-          <p class="skjemaBoks"> <!-- Epost -->
+          <p class="skjemaBoks">
+            <!-- Epost -->
             <label for="epost" class="inputlinje">E-post: </label>
-            <input type="email" name="email" id="epost"><span class="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
+            <input type="email" name="email" id="epost"><span class="paakrevd"><abbr title="påkrevd"
+                aria-label="påkrevd">*</abbr></span>
           </p>
-          <p class="skjemaBoks"> <!-- Klasse -->
+          <p class="skjemaBoks">
+            <!-- Klasse -->
             <label for="klasse" class="inputlinje">Klasse/kategori: </label>
-            <select id="klasse" name="klasse" >
+            <select id="klasse" name="klasse">
               <option value="" id="velg" disabled selected>--Velg--</option>
               <option value="hoest_nybegynner">Kurs høsten 2019, Nybegynner (kr 950,00)</option>
               <option value="hoest_ovet">Kurs høsten 2019, Øvet (kr 950,00)</option>
               <option value="kunAvgivt">Kun medlemsavgift (kr 50,00)</option>
             </select><span class="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
           </p>
-          <p class="skjemaBoks"> <!-- Tlf -->
+          <p class="skjemaBoks">
+            <!-- Tlf -->
             <label for="tlf" class="inputlinje">Mobil:</label>
             <input type="tel" name="mobil" id="tlf"><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
           </p>
-          <p class="skjemaBoks"> <!-- Hvordan hørte du om oss? -->
+          <p class="skjemaBoks">
+            <!-- Hvordan hørte du om oss? -->
             <label for="hvordan" class="inputlinje">Hvordan hørte du om oss? </label>
-            <input type="text" name="hvordan" id="hvordan"><span class="paakrevd"><abbr title="påkrevd" aria-label="påkrevd">*</abbr></span>
+            <input type="text" name="hvordan" id="hvordan"><span class="paakrevd"><abbr title="påkrevd"
+                aria-label="påkrevd">*</abbr></span>
           </p>
-          <p class="skjemaBoks"> <!-- MedlemskapTLH -->
+          <p class="skjemaBoks">
+            <!-- MedlemskapTLH -->
             <input type="checkbox" name="medlemskapTLH" id="medlemskap">
-            <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-          <p>Medlemskap er inkludert i kursavgiften.</p>
-          <p class="skjemaBoks"> <!-- Aksept boks -->
-            <input type="checkbox" name="aksept" id="aksept">
-            <label for="aksept">Jeg aksepterer Deltager AS' <a href="https://www.deltager.no/personvern" target="_blank">vilkår og betingelser</a> og <a href="https://www.deltager.no/betingelser" target="_blank">personvernerklæringen</a></label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
-          </p>
-          <p> <!-- Bekreft -->
-            <button class="skjemaKnapp" type="submit" onclick="validation()">Bekreft</button>
-          </p>
+            <label for="medlemskap">Medlemskap i Trondheim Lindy Hop</label><abbr title="påkrevd"
+              aria-label="påkrevd">*</abbr>
+            <p>Medlemskap er inkludert i kursavgiften.</p>
+            <p class="skjemaBoks">
+              <!-- Aksept boks -->
+              <input type="checkbox" name="aksept" id="aksept">
+              <label for="aksept">Jeg aksepterer Deltager AS' <a href="https://www.deltager.no/personvern"
+                  target="_blank">vilkår og betingelser</a> og <a href="https://www.deltager.no/betingelser"
+                  target="_blank">personvernerklæringen</a></label><abbr title="påkrevd" aria-label="påkrevd">*</abbr>
+            </p>
+            <p>
+              <!-- Bekreft -->
+              <button class="skjemaKnapp" type="submit" onclick="validation()">Bekreft</button>
+            </p>
         </fieldset>
       </form>
     </div>
     <footer id="main-footer"></footer>
-    </div>
-    </div>
+  </div>
   <script src="scripts/validation.js"></script>
   <script src="scripts/headerfooter.js"></script>
   <script src="scripts/responsiveHeader.js"></script>
-  <script type="text/javascript" src="scripts/translate.js"></script>
-  </body>
+  <script src="scripts/translate.js"></script>
+</body>
+
 </html>
