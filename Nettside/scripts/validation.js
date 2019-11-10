@@ -76,4 +76,3 @@ function validation() // inspired by https://www.geeksforgeeks.org/form-validati
     document.getElementById("paamelding").innerHTML = "<h2>" + "Påmeldingen din er nå registrert!" +"</h1>" + "<h4>" +"Du får snart epost fra oss med bekreftelsen." + "</h4>";
     return true; 
 }
-

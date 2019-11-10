@@ -1,194 +1,197 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> P3 changes </title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/p3style.css">
-    </head>
-    <body>
-      <header>
-        <h1>P3 Changes</h1>
-        <hr>
-        <div class="byline">
-        <p> By Maja, Thea, Jørgen, Marcus and Robert </p>
-        <p> 10.11.2019</p>
-        </div>
-      </header>
-      <section>
-        <h2> Administrative detaljer </h2>
-          <p class="midt"> Vår klient: Trondheim Lindy Hop <br>
-              Kontaktperson: Maja Nowak <br>
-              Nettsidens navn: trondheimlindy.no </p>
-        <h2> Nettsiden vår </h2>
-          <p class="midt"> Denne linken vil ta deg med til hovedsiden til nettsiden vår:
-          <a href="https://haalmarc.github.io/webtek17/Nettside/index.html" target="_blank"> trondheimlindy.no </a>
-          </p>
-        <h2> Våre endringer </h2>
-          <h3> Generelt </h3>
-            <ul>
-              <li> En stor mangel i P2 er at vi ikke designet
-                mockupene fullstending for hverken mobil eller desktop.
-                Dette gjorde at vi stod igjen med flere ubesvarte spørsmål
-                og avgjørelser som måtte tas etter at vi fikk sett hvordan
-                siden faktisk ser ut i ulike formater. </li>
-              <li> Erstattet flere pikselverdier med relative verdier f.eks.
-                prosentverdier og em. Dette gjør at nettsiden beholder strukturen
-                og responsiviteten, uavhengig av hvilken enhet brukeren anvender </li>
-              <li> Laget favicon til nettsiden </li>
-            </ul>
-          <h3> Minstekrav (javascript) </h3>
-            <ul>
-              <li>Endret navnet på script.js til et mer beskrivende navn; paameldingsKnapp.js</li>
-              <li> Oversettelses scriptet er skrevet i filen translate.js
-                i stedet for paameldingsKnapp.js for å gjøre filstrukturen mer oversiktlig </li>
-              <li> Vi valgte å bruke CSS til å lage slideshowet i stedet for JS.
-                Vi har også  justert animasjons hastigheten basert på brukertilbakemeldinger
-                fra testingen. Både hvor lenge hvert bilde er på skjermen, og hvor hurtig
-                overgangen mellom bildene er, har måtte vurderes. For hurtig animasjon kan
-                virke overveldende, men hvis hvert bilde er på skjermen for lenge vil de fleste
-                brukere ikke oppleve dem, og hvis overgangen er for langsom vil både bildet
-                og teksten være vanskelig å lese. </li>
-              <li> Vi valgte å ha skriptet som genererer header og footer i samme filen,
-                headerfooter.js fremfor å ha dem i separate filer, header.js og footer.js </li>
-              <li> Scriptet som bekrefter at påmeldingen ble gjennomført er i en egen fil,
-                validation.js i stedet for i paameldingsKnapp.js. I validation.js er det også script
-                for validering av input til formen. </li>
-              <li> Vi hadde ikke tid til å implementere eventkalenderen, har i stedet en
-                link til facebook side der alle eventene er oppført. </li>
-              <li> I paameldingsKnapp.js er det et lite script som gjør at påmelding-knappen
-                på Kurs-siden linker til påmelding siden. Dette ble gjort på denne
-                måten fremfor å bruke en hyperlenke slik at knappen kan problemfritt
-                bruke samme CSSen som knappen i påmeldingsskjemaet. </li>
-            </ul>
-          <h3> Index </h3>
-            <ul>
-              <li> Slideshowet utføres gjennom en animasjon som rullerer gjennom de 4 bildene </li>
-              <li> Fontstørrelsene har blitt endret til å bruke em i stedet for piksler </li>
-            </ul>
-          <h3> Kurs </h3>
-            <ul>
-              <li> Størrelsen på overskriftene ble byttet til 24 piksler. Bortsett fra det
-                har vi ikke implementert flere endringer. </li>
-            </ul>
-          <h3> Om oss </h3>
-            <ul>
-              <li> Teksten ble flyttet til venstre side. Vi la til en youtube video
-                som viser dansen og plasserte den på høyre siden. </li>
-              <li> Erstattet placeholder tekst med faktisk informasjon om Trondheim Lindy Hop. </li>
-              <li> Har ikke med fysiske adresse på denne siden, ettersom den er i footeren. </li>
-              <li> I stedet for å ha teksten sentrert har vi i stedet venstrejustert teksten
-                og lagt til en informerende video om Lindy Hop dansestilen. </li>
-            </ul>
-          <h3> Eventer </h3>
-            <ul>
-              <li> Ingen endringer </li>
-            </ul>
-          <h3> Påmelding </h3>
-            <ul>
-              <li> Inputen til mobilnummer ble endret til å være påkrevd </li>
-              <li> Bekreftelses-knappen ble forandret til å være i stil med resten av siden </li>
-              <li> Mobil-inputen inkluderer ikke dropdown-liste for nasjoner </li>
-            </ul>
-          <h3> Header </h3>
-            <ul>
-              <li> Endret font-size fra 50px til 1.2% av vår vanlige skriftstørrelse </li>
-              <li> I stedet for å gjøre oversettelses funksjonen tilgjengelig fra en
-                text-link i navbar elementet, er det nå tilgjengelig ved å klikke på
-                et ikon øverst i høyre hjørne av headeren. Dette separerer den fra
-                linkene til andre sider. </li>
-              <li> Gjort forbedringer på logoen til Trondheim Lindy Hop i headeren </li>
-            </ul>
-          <h3> Footer </h3>
-            <ul>
-              <li> Benytter skarpere logoer for Instagram og Facebook </li>
-              <li> Link til Instagram og Facebook er presentert i motsatt rekkefølge </li>
-              <li> Økt fontstørrelsen til footeren fra 10px til 16px </li>
-              <li> Økt størrelsen til logoer for Instagram og Facebook fra 20px til 32px </li>
-            </ul>
-        <h2> Oppdatert filstruktur </h2>
-          <ul>
-            <li>index.html</li>
-            <li>about.html</li>
-            <li>courses.html</li>
-            <li>paamelding.html</li>
-            <li>css/
-                <ul>
-                    <li>styling.css</li>
-                </ul>
-            </li>
-            <li>img/
-                <ul>
-                    <li>facebookLogo.png </li>
-                    <li> favicon.png </li>
-                    <li> forsidebilde1.jpg </li>
-                    <li> forsidebilde2.jpg </li>
-                    <li>forsidebilde3.jpg </li>
-                    <li> forsidebilde4.jpg </li>
-                    <li> instagramLogo.png </li>
-                    <li> kurs1.jpg </li>
-                    <li> kurs2.jpg </li>
-                    <li> omossimg.jpg </li>
-                    <li> tlh_logo.png </li>
-                    <li> translateimg.png </li>
-                </ul>
-            </li>
-            <li>scripts/
-                <ul>
-                    <li>headerfooter.js</li>
-                    <li>responsiveHeader.js</li>
-                    <li>paameldingsKnapp.js</li>
-                    <li>slideshow.js</li>
-                    <li> translate.js </li>
-                    <li> validation.js </li>
-                </ul>
-            </li>
-          </ul>
-        <h2> Arbeidsfordeling </h2>
-          <h3> Jørgen Reimers </h3>
-            <p> Jørgen har hatt hovedansvaret for å implementere lik
-              header og footer på alle sidene og plassert disse på en
-              korrekt måte. Han har også vært en stor del av forsøket
-              på å lage et slideshow med JS samme med Thea, selv om
-              vi til slutt endte opp med å bruke CSS. I tillegg har
-              han bidratt til å gjøre sidene responsive for mobilbrukere,
-              og redusert innlastningstiden for de ulike sidene. Git har
-              også vært et fokus, og han har hjulpet de andre med dette
-              dersom de har trengt det. </p>
-          <h3> Maja Nowak </h3>
-            <p> Maja har vært ansvarlig for sidene “kurs” og “om oss”,
-              dvs. hun har laget både html og css til de sidene. I tillegg
-              har hun laget validation.js til påmeldingsskjemaet. Hun
-              har jobbet ganske mye med designet. Hun har vært hovedansvarlig
-              for mockups, og   hun skaffet og redigert alle bilder og logoer.
-              I sluttfasen har hun bidratt med å implementere små endringer. </p>
-          <h3> Robert Thor Arnarsson </h3>
-            <p> Robert har jobbet hovedsakelig med translate funksjonen
-              og å lage påmeldingsformen. I tillegg har han gjort små
-              endringer/forbedringer på animasjonen på hovedsiden, lagt
-              til litt funksjonalitet i headerFooter og responsiveHeader
-              scriptet, skrevet scriptet i paameldingsKnapp.js </p>
-          <h3> Marcus Haaland </h3>
-            <p> Marcus har hatt hovedansvar i å lage headeren med tilhørende
-              funksjonalitet (responsiveHeader.js) og å implementere responsivitet
-              på header, courses og about. Han har også hatt hovedansvar for
-              css-dokumentet, og å minimere overlappende kode. Marcus har også
-              bidratt til å designe nettsiden. I tillegg til kodeaspektet, har
-              Marcus vært bindeledd mellom veileder og gruppa og fulgt opp oppgaver.
-              Et annet aspekt har vært Github, hvor han har bidratt med opplæring
-              i Git og å hoste nettsiden på Git for bruk under testing. </p>
-          <h3> Thea Karin Fladby </h3>
-            <p> Thea har hatt hovedansvar for å lage hovedsiden og footeren.
-              Hun har sammen med Jørgen jobbet en del med å lage slideshowet
-              på hovedsiden med Javascript, men bestemte seg etterhvert for at
-              dette bedre kunne gjøres med css. Thea har jobbet mye med design
-              for hele nettsiden. Særlig det å passe på at endringer som blir gjort
-              ikke gjør siden mindre stilren. I tillegg til dette har Thea jobbet
-              med å sette tydelige tidsfrister og møtetidspunkter for gruppa, og
-              passet på at alle har klare arbeidsoppgaver. </p>
-      </section>
-      <footer>
-        <h4> Written and created by Maja Nowak, Thea Karin Fladby,
-        Jørgen Reimers, Marcus Haaland and Robert Thor Arnarsson </h4>
-      </footer>
-    </body>
+
+<html lang="no">
+
+<head>
+  <title> P3 changes </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/p3style.css">
+</head>
+
+<body>
+  <header>
+    <h1>P3 Changes</h1>
+    <hr>
+    <div class="byline">
+      <p> By Maja, Thea, Jørgen, Marcus and Robert </p>
+      <p> 10.11.2019</p>
+    </div>
+  </header>
+  <section>
+    <h2> Administrative detaljer </h2>
+    <p class="midt"> Vår klient: Trondheim Lindy Hop <br>
+      Kontaktperson: Maja Nowak <br>
+      Nettsidens navn: trondheimlindy.no </p>
+    <h2> Nettsiden vår </h2>
+    <p class="midt"> Denne linken vil ta deg med til hovedsiden til nettsiden vår:
+      <a href="https://haalmarc.github.io/webtek17/Nettside/index.html" target="_blank"> trondheimlindy.no </a>
+    </p>
+    <h2> Våre endringer </h2>
+    <h3> Generelt </h3>
+    <ul>
+      <li> En stor mangel i P2 er at vi ikke designet
+        mockupene fullstending for hverken mobil eller desktop.
+        Dette gjorde at vi stod igjen med flere ubesvarte spørsmål
+        og avgjørelser som måtte tas etter at vi fikk sett hvordan
+        siden faktisk ser ut i ulike formater. </li>
+      <li> Erstattet flere pikselverdier med relative verdier f.eks.
+        prosentverdier og em. Dette gjør at nettsiden beholder strukturen
+        og responsiviteten, uavhengig av hvilken enhet brukeren anvender </li>
+      <li> Laget favicon til nettsiden </li>
+    </ul>
+    <h3> Minstekrav (javascript) </h3>
+    <ul>
+      <li> Oversettelses scriptet er skrevet i filen translate.js
+        i stedet for script.js for å gjøre filstrukturen mer oversiktlig </li>
+      <li> Vi valgte å bruke CSS til å lage slideshowet i stedet for JS.
+        Vi har også justert animasjons hastigheten basert på brukertilbakemeldinger
+        fra testingen. Både hvor lenge hvert bilde er på skjermen, og hvor hurtig
+        overgangen mellom bildene er, har måtte vurderes. For hurtig animasjon kan
+        virke overveldende, men hvis hvert bilde er på skjermen for lenge vil de fleste
+        brukere ikke oppleve dem, og hvis overgangen er for langsom vil både bildet
+        og teksten være vanskelig å lese. </li>
+      <li> Vi valgte å ha skriptet som genererer header og footer i samme filen,
+        headerfooter.js fremfor å ha dem i separate filer, header.js og footer.js </li>
+      <li> Scriptet som bekrefter at påmeldingen ble gjennomført er i en egen fil,
+        validation.js i stedet for i script.js. I validation.js er det også script
+        for validering av input til formen. </li>
+      <li> Vi hadde ikke tid til å implementere eventkalenderen, har i stedet en
+        link til facebook side der alle eventene er oppført. </li>
+      <li> I script.js er det et lite script som gjør at påmelding-knappen
+        på Kurs-siden linker til påmelding siden. Dette ble gjort på denne
+        måten fremfor å bruke en hyperlenke slik at knappen kan problemfritt
+        bruke samme CSSen som knappen i påmeldingsskjemaet. </li>
+    </ul>
+    <h3> Index </h3>
+    <ul>
+      <li> Slideshowet utføres gjennom en animasjon som rullerer gjennom de 4 bildene </li>
+      <li> Fontstørrelsene har blitt endret til å bruke em i stedet for piksler </li>
+    </ul>
+    <h3> Kurs </h3>
+    <ul>
+      <li> Størrelsen på overskriftene ble byttet til 24 piksler. Bortsett fra det
+        har vi ikke implementert flere endringer. </li>
+    </ul>
+    <h3> Om oss </h3>
+    <ul>
+      <li> Teksten ble flyttet til venstre side. Vi la til en youtube video
+        som viser dansen og plasserte den på høyre siden. </li>
+      <li> Erstattet placeholder tekst med faktisk informasjon om Trondheim Lindy Hop. </li>
+      <li> Har ikke med fysiske adresse på denne siden, ettersom den er i footeren. </li>
+      <li> I stedet for å ha teksten sentrert har vi i stedet venstrejustert teksten
+        og lagt til en informerende video om Lindy Hop dansestilen. </li>
+    </ul>
+    <h3> Eventer </h3>
+    <ul>
+      <li> Ingen endringer </li>
+    </ul>
+    <h3> Påmelding </h3>
+    <ul>
+      <li> Inputen til mobilnummer ble endret til å være påkrevd </li>
+      <li> Bekreftelses-knappen ble forandret til å være i stil med resten av siden </li>
+      <li> Mobil-inputen inkluderer ikke dropdown-liste for nasjoner </li>
+    </ul>
+    <h3> Header </h3>
+    <ul>
+      <li> Endret font-size fra 50px til 1.2% av vår vanlige skriftstørrelse </li>
+      <li> I stedet for å gjøre oversettelses funksjonen tilgjengelig fra en
+        text-link i navbar elementet, er det nå tilgjengelig ved å klikke på
+        et ikon øverst i høyre hjørne av headeren. Dette separerer den fra
+        linkene til andre sider. </li>
+      <li> Gjort forbedringer på logoen til Trondheim Lindy Hop i headeren </li>
+    </ul>
+    <h3> Footer </h3>
+    <ul>
+      <li> Benytter skarpere logoer for Instagram og Facebook </li>
+      <li> Link til Instagram og Facebook er presentert i motsatt rekkefølge </li>
+      <li> Økt fontstørrelsen til footeren fra 10px til 16px </li>
+      <li> Økt størrelsen til logoer for Instagram og Facebook fra 20px til 32px </li>
+    </ul>
+    <h2> Oppdatert filstruktur </h2>
+    <ul>
+      <li>index.html</li>
+      <li>about.html</li>
+      <li>courses.html</li>
+      <li>paamelding.html</li>
+      <li>css/
+        <ul>
+          <li>styling.css</li>
+        </ul>
+      </li>
+      <li>img/
+        <ul>
+          <li>facebookLogo.png </li>
+          <li> favicon.png </li>
+          <li> forsidebilde1.jpg </li>
+          <li> forsidebilde2.jpg </li>
+          <li>forsidebilde3.jpg </li>
+          <li> forsidebilde4.jpg </li>
+          <li> instagramLogo.png </li>
+          <li> kurs1.jpg </li>
+          <li> kurs2.jpg </li>
+          <li> omossimg.jpg </li>
+          <li> tlh_logo.png </li>
+          <li> translateimg.png </li>
+        </ul>
+      </li>
+      <li>scripts/
+        <ul>
+          <li>headerfooter.js</li>
+          <li>responsiveHeader.js</li>
+          <li>script.js</li>
+          <li>slideshow.js</li>
+          <li> translate.js </li>
+          <li> validation.js </li>
+        </ul>
+      </li>
+    </ul>
+    <h2> Arbeidsfordeling </h2>
+    <h3> Jørgen Reimers </h3>
+    <p> Jørgen har hatt hovedansvaret for å implementere lik
+      header og footer på alle sidene og plassert disse på en
+      korrekt måte. Han har også vært en stor del av forsøket
+      på å lage et slideshow med JS samme med Thea, selv om
+      vi til slutt endte opp med å bruke CSS. I tillegg har
+      han bidratt til å gjøre sidene responsive for mobilbrukere,
+      og redusert innlastningstiden for de ulike sidene. Git har
+      også vært et fokus, og han har hjulpet de andre med dette
+      dersom de har trengt det. </p>
+    <h3> Maja Nowak </h3>
+    <p> Maja har vært ansvarlig for sidene “kurs” og “om oss”,
+      dvs. hun har laget både html og css til de sidene. I tillegg
+      har hun laget validation.js til påmeldingsskjemaet. Hun
+      har jobbet ganske mye med designet. Hun har vært hovedansvarlig
+      for mockups, og hun skaffet og redigert alle bilder og logoer.
+      I sluttfasen har hun bidratt med å implementere små endringer. </p>
+    <h3> Robert Thor Arnarsson </h3>
+    <p> Robert har jobbet hovedsakelig med translate funksjonen
+      og å lage påmeldingsformen. I tillegg har han gjort små
+      endringer/forbedringer på animasjonen på hovedsiden, lagt
+      til litt funksjonalitet i headerFooter og responsiveHeader
+      scriptet, skrevet scriptet i script.js </p>
+    <h3> Marcus Haaland </h3>
+    <p> Marcus har hatt hovedansvar i å lage headeren med tilhørende
+      funksjonalitet (responsiveHeader.js) og å implementere responsivitet
+      på header, courses og about. Han har også hatt hovedansvar for
+      css-dokumentet, og å minimere overlappende kode. Marcus har også
+      bidratt til å designe nettsiden. I tillegg til kodeaspektet, har
+      Marcus vært bindeledd mellom veileder og gruppa og fulgt opp oppgaver.
+      Et annet aspekt har vært Github, hvor han har bidratt med opplæring
+      i Git og å hoste nettsiden på Git for bruk under testing. </p>
+    <h3> Thea Karin Fladby </h3>
+    <p> Thea har hatt hovedansvar for å lage hovedsiden og footeren.
+      Hun har sammen med Jørgen jobbet en del med å lage slideshowet
+      på hovedsiden med Javascript, men bestemte seg etterhvert for at
+      dette bedre kunne gjøres med css. Thea har jobbet mye med design
+      for hele nettsiden. Særlig det å passe på at endringer som blir gjort
+      ikke gjør siden mindre stilren. I tillegg til dette har Thea jobbet
+      med å sette tydelige tidsfrister og møtetidspunkter for gruppa, og
+      passet på at alle har klare arbeidsoppgaver. </p>
+  </section>
+  <footer>
+    <h4> Written and created by Maja Nowak, Thea Karin Fladby,
+      Jørgen Reimers, Marcus Haaland and Robert Thor Arnarsson </h4>
+  </footer>
+</body>
+
 </html>
