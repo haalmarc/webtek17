@@ -1,4 +1,4 @@
-/*Skjuler nav-elementer eller viser dem som blokker */
+/* Skjuler nav-elementer eller viser dem som blokker */
 function toggleBlock() {
   var nav = document.querySelector("nav");
   if (nav.style.display === "block") {
@@ -8,7 +8,7 @@ function toggleBlock() {
   }
 }
 
-/* Setter nav til display: block ved over 700px bredde. Hentet fra https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener */
+/* Setter nav til 'display: block' ved over 700px bredde. Hentet fra https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener */
 var mql = window.matchMedia('(min-width: 700px)');
 function screenTest(e) {
   if (e.matches) {
@@ -19,7 +19,7 @@ function screenTest(e) {
 mql.addListener(screenTest);
 
 
-// Lukk meny
+// Lukke meny om det klikkes på body
 function makeBlock(){
   var nav = document.querySelector("nav");
   if (nav.style.display === "block") {
