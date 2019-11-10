@@ -40,6 +40,10 @@ ul,
   font-size: 20px;
 }
 
+.midt {
+  text-align: center;
+}
+
 img {
   display: block;
   margin: auto auto;
